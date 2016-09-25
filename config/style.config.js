@@ -8,12 +8,8 @@ module.exports = {
     src: 'src/sass/**/*.scss',
     dest: 'public/assets/css',
     plugins: [
-        // require('doiuse')({
-        //     browsers: SUPPORT_BROWSERS
-        // }),
         require('autoprefixer')({
             browsers: SUPPORT_BROWSERS
-        }),
-        require('css-mqpacker')({})
+        })
     ]
 };

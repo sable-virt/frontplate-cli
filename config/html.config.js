@@ -1,9 +1,11 @@
 module.exports = {
     src: 'src/view/**/*.ejs',
     dest: 'public',
+    // ejs params
     params: {
         title: 'title'
     },
+    // htmlhint rules
     rules: {
         "tagname-lowercase": true,
         "attr-lowercase": true,

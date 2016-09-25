@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-const util = require('./lib/util');
 const spawn = require('cross-spawn');
-
 const updateNotifier = require('update-notifier');
+const util = require('./lib/util');
 const pkg = require('./package.json');
 updateNotifier({pkg}).notify();
 
