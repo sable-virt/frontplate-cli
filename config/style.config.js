@@ -1,23 +1,19 @@
+'use strict';
+const SUPPORT_BROWSERS = [
+    'last 3 version',
+    'ie >= 9',
+    'Android >= 4.0'
+];
 module.exports = {
-  use: [
-    // 'doiuse',
-    'autoprefixer',
-    'css-mqpacker'
-  ],
-  doiuse: {
-    browsers: [
-      'last 3 version',
-      'ie >= 9',
-      'Android >= 4.0'
+    src: 'src/sass/**/*.scss',
+    dest: 'public/assets/css',
+    plugins: [
+        // require('doiuse')({
+        //     browsers: SUPPORT_BROWSERS
+        // }),
+        require('autoprefixer')({
+            browsers: SUPPORT_BROWSERS
+        }),
+        require('css-mqpacker')({})
     ]
-  },
-  autoprefixer: {
-    browsers: [
-      'last 3 version',
-      'ie >= 9',
-      'Android >= 4.0'
-    ],
-  },
-  'css-mqpacker': {
-  }
 };

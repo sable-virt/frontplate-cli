@@ -1,5 +1,6 @@
 'use strict';
 
+const Rx = require('rxjs');
 const fs = require('fs-extra');
 const path = require('path');
 const sass = require('node-sass');
@@ -7,42 +8,66 @@ const postcss = require('postcss');
 const sasslint = require('sass-lint');
 const ora = require('ora');
 const util = require('../lib/util');
+const timer = require('../lib/timer');
 
+/**
+ * style tasks (sass/css)
+ * @param pattern{string} glob pattern string
+ * @param dest{string} dest path
+ * @param plugins{PostCSSPlugin[]} Array of plugins
+ * @returns {Rx.Observable}
+ */
 module.exports = function(pattern,dest,plugins) {
-    console.time('style');
+    timer.start('style');
     const spinner = ora('[build] style').start();
     lint();
+
+
     let processor = postcss(plugins || []);
     let files = util.getPath(pattern);
-    let promises = files.map((filepath) => {
+    files = files.filter((filepath) => {
+        return (path.basename(filepath).charAt(0) !== '_');
+    });
+
+    let observables = files.map((filepath) => {
         let outputPath = util.destPath(pattern,dest,filepath,'.css');
         return parse(processor,filepath,outputPath);
     });
-    Promise.all(promises).then(() => {
+    let obs = Rx.Observable.combineLatest(observables).share();
+    obs.subscribe(() => {
         spinner.succeed();
-        console.timeEnd('style');
+        timer.end('style');
     },() => {
         spinner.fail();
     });
-    return Promise.all(promises);
+    return obs;
 };
 
+/**
+ * SASS Lint
+ */
 function lint() {
     let configPath = '.sass-lint.yml';
     let result = sasslint.lintFiles(null, {},configPath);
     sasslint.outputResults(result);
-    sasslint.failOnError(result);
 }
 
+/**
+ * scss to css
+ * @param processor{PostCSSProcessor} postcss processor object
+ * @param filepath{string} scss file path
+ * @param outputPath{string} dest path
+ * @returns {Rx.Observable}
+ */
 function parse(processor,filepath,outputPath) {
-    return new Promise((resolve,reject) => {
+    return Rx.Observable.create((observer) => {
         sass.render({
             file: filepath,
             outputStyle: 'compact',
             sourceMap: true,
             outFile: outputPath
         }, function (e, result) {
-            if (e) return reject(e);
+            if (e) return observer.error(e);
             let basename = path.basename(outputPath);
             processor.process(result.css.toString(), {
                 to: basename,
@@ -51,31 +76,39 @@ function parse(processor,filepath,outputPath) {
                     prev:result.map.toString()
                 }:null
             }).then(function (result) {
-                output(outputPath,result).then(resolve,reject);
+                output(outputPath,result).subscribe((res) => {
+                    observer.next(res);
+                },(e) => {
+                    observer.error(e);
+                });
             });
         });
     });
 }
 
+/**
+ * output css & map
+ * @param outputPath{string} dest path
+ * @param result{PostCSSResultObject}
+ * @returns {Rx.Observable}
+ */
 function output(outputPath,result) {
-    return new Promise((resolve,reject) => {
-        let ended = false;
-        function finish() {
-            resolve(outputPath);
-        }
-        fs.outputFile(outputPath, result.css,(err) => {
-            if (err) return reject(err);
-            if (!result.map || ended) return finish();
-            ended = true;
-        });
-        if (result.map) {
-            let basename = path.basename(outputPath);
-            let map = path.join(path.dirname(outputPath),'maps',`${basename}.map`);
+     let cssObs = Rx.Observable.create((observer) => {
+         fs.outputFile(outputPath, result.css,(err) => {
+             if (err) return observer.error(err);
+             observer.next(outputPath);
+         });
+     });
+    if (result.map) {
+        let basename = path.basename(outputPath);
+        let map = path.join(path.dirname(outputPath),'maps',`${basename}.map`);
+        let mapObs = Rx.Observable.create((observer) => {
             fs.outputFile(map, result.map, (err) => {
-                if (err) return reject(err);
-                if (ended) return finish();
-                ended = true;
+                if (err) return observer.error(err);
+                observer.next(map);
             });
-        }
-    });
+        });
+        cssObs = cssObs.combineLatest(mapObs);
+    }
+    return cssObs;
 }

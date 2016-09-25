@@ -1,5 +1,4 @@
 'use strict';
-const util = require('util');
 module.exports = [
   {
     src: 'src/sprites/icon/*.{png,gif,jpg}',

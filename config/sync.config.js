@@ -1,3 +1,3 @@
 module.exports = {
-  "src/lib/**/*": "${dest}/assets/lib"
+  "src/lib/**/*": "public/assets/lib"
 };

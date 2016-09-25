@@ -1,30 +1,36 @@
 'use strict';
 
+const Rx = require('rxjs');
 const webpack = require('webpack');
-const config = require('../config/webpack.config');
 const ora = require('ora');
+const timer = require('../lib/timer');
 
-module.exports = function() {
-    console.time('script');
+/**
+ * script task
+ * @param config{object} webpack config object
+ * @returns {Rx.Observable}
+ */
+module.exports = function(config) {
+    timer.start('script');
     const spinner = ora('[build] script').start();
-    return new Promise((resolve,reject) => {
+    return Rx.Observable.create((observer) => {
         webpack(config,(err,stats) => {
-            if (err) {
-                spinner.fail();
-                return reject(new Error(err));
-            }
-            spinner.succeed();
             console.log(stats.toString({
-                chunks: false, // Makes the build much quieter
+                chunks: false,
                 colors: true
             }));
+            if (err || stats.hasErrors()) {
+                spinner.fail();
+                return observer.error(err);
+            }
             let sj = stats.toJson(true);
             let files = [];
             sj.chunks.forEach((c) => {
                 files = files.concat(c.files);
             });
-            console.timeEnd('script');
-            resolve(files);
+            spinner.succeed();
+            timer.end('script');
+            observer.next(files);
         });
     });
 };

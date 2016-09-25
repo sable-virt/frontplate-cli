@@ -1,20 +1,40 @@
 'use strict';
 
+const Rx = require('rxjs');
 const Server = require('karma').Server;
+const timer = require('../lib/timer');
 
-module.exports = function() {
-    console.time('test');
-    return new Promise((resolve,reject) => {
-        const server = new Server({configFile: process.cwd() + '/config/karma.conf.js'}, (exitCode) => {
+/**
+ * Karma config clsss
+ */
+class KarmaConfig {
+    constructor() {
+        this._config = {};
+    }
+    set(obj) {
+        this._config = obj;
+    }
+    get() {
+        return this._config;
+    }
+}
 
-        });
-        server.on('run_complete', (browser) => {
-            console.timeEnd('test');
-            resolve(browser);
-        });
-        server.on('browser_error', (browser,err) => {
-            reject(err);
-        });
-        server.start();
+/**
+ * test task
+ * @param config{Function} karma config function
+ * @returns {Rx.Observable}
+ */
+module.exports = function(config) {
+    timer.start('test');
+    return Rx.Observable.create((observer) => {
+        let conf = new KarmaConfig();
+        config(conf);
+        new Server(conf.get())
+            .on('run_complete', (browser) => {
+                timer.end('test');
+                setTimeout(() => {observer.next(browser)});
+            }).on('browser_error', (browser,err) => {
+                observer.error(err);
+            }).start();
     });
 };

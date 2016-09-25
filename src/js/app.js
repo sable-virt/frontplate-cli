@@ -1,6 +1,6 @@
 class Main {
     constructor() {
-        // alert('111113');
+        alert('111113');
     }
 }
 new Main();

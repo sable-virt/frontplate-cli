@@ -5,25 +5,40 @@ const Spritesmith = require('spritesmith');
 const json2css = require('json2css');
 const ora = require('ora');
 const util = require('../lib/util');
+const timer = require('../lib/timer');
+const Rx = require('rxjs');
 
+/**
+ * sprite task
+ * @param sprites{object[]} sprite config object
+ * @returns {Rx.Observable}
+ */
 module.exports = function (sprites) {
-    console.time('sprite');
+    timer.start('sprite');
     const spinner = ora('[build] sprite').start();
-    let promises = sprites.map((sprite) => {
+
+    let observables = sprites.map((sprite) => {
         let src = util.getPath(sprite.src);
         return generate(src, sprite);
     });
-    Promise.all(promises).then(() => {
+    let obs = Rx.Observable.combineLatest(observables).share();
+    obs.subscribe(() => {
         spinner.succeed();
-        console.timeEnd('sprite');
+        timer.end('sprite');
     },() => {
         spinner.fail();
     });
-    return Promise.all(promises);
+    return obs;
 };
 
+/**
+ * generate sprite image & css
+ * @param src{string} directory of sprites
+ * @param config{object} spritesmith options(https://www.npmjs.com/package/spritesmith)
+ * @returns {Rx.Observable}
+ */
 function generate(src, config) {
-    return new Promise((resolve, reject) => {
+    return Rx.Observable.create((observer) => {
         Spritesmith.run({
             src: src,
             options: {
@@ -33,7 +48,7 @@ function generate(src, config) {
                 algorithmOpts: config.algorithmOpts || {}
             }
         }, (err, result) => {
-            if (err) return reject(err);
+            if (err) return observer.error(err);
             let spriteParams = Object.keys(result.coordinates).map((key) => {
                 let data = result.coordinates[key];
                 let ext = path.extname(key);
@@ -49,37 +64,40 @@ function generate(src, config) {
                     image: config.imgPath || 'images/sprite.png'
                 };
             });
-            output(result, spriteParams, config).then(resolve, reject);
+            output(result, spriteParams, config).subscribe((res) => {
+                observer.next(res);
+            }, (e) => {
+                observer.error(e);
+            });
         });
     });
 }
 
 function output(result, spriteParams, config) {
-    let css = json2css(spriteParams, {
-        'format': config.format || 'scss'
-    });
     let destImgPath = config.destImage || 'images/sprite.png';
     let destCSSPath = config.destCSS || 'src/scss/sprites/_sprite.scss';
 
-    return new Promise((resolve, reject) => {
-        let ended = false;
+    let filename = path.basename(destCSSPath,path.extname(destCSSPath));
 
-        function finish() {
-            resolve({
-                image: destImgPath,
-                css: destCSSPath
-            });
+    let css = json2css(spriteParams, {
+        format: config.format || 'css',
+        cssSelector: function (item) {
+            return `${filename}-${item}`;
         }
+    });
 
+
+    let imgObs = Rx.Observable.create((observer) => {
         fs.outputFile(destImgPath, result.image, (err) => {
-            if (err) return reject(err);
-            if (ended) return finish();
-            ended = true;
-        });
-        fs.outputFile(destCSSPath, css, (err) => {
-            if (err) return reject(err);
-            if (ended) return finish();
-            ended = true;
+            if (err) return observer.error(err);
+            observer.next(destImgPath);
         });
     });
+    let cssObs = Rx.Observable.create((observer) => {
+        fs.outputFile(destCSSPath, css, (err) => {
+            if (err) return observer.error(err);
+            observer.next(destCSSPath);
+        });
+    });
+    return Rx.Observable.combineLatest(imgObs,cssObs);
 }
