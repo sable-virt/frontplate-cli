@@ -17,7 +17,7 @@
     "url": "https://github.com/frontainer/frontplate-cli/issues"
   },
   "bin": {
-    "frp": "./frp.js"
+    "frp": "./index.js"
   },
   "homepage": "https://github.com/frontainer/frontplate-cli#readme",
   "dependencies": {
