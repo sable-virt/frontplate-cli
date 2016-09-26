@@ -1,8 +1,10 @@
 'use strict';
 const webpack = require("webpack");
+const glob = require('glob');
 const webpackConfig = {
     entry: {
-        'app': './src/js/app.js'
+        'app': './src/js/app.js',
+        'test': glob.sync('./src/js/**/*-spec.js')
     },
     output: {
         path: 'public/assets/js',
@@ -11,19 +13,19 @@ const webpackConfig = {
         sourceMapFilename: 'maps/[name].map',
         jsonpFunction: 'fr'
     },
-    resolve: {
-        alias: {
-            // 'power-assert': 'power-assert/build/power-assert'
-        },
-        modulesDirectories: [
-            'node_modules',
-            'src'
-        ]
+    module: {
+        preLoaders: [
+            {test: /\.js$/, exclude: /node_modules/, loader: 'eslint'}
+        ],
+        loaders: [
+            {test: /\.html$/, loader: 'html'},
+            {test: /\.json$/, loader: 'json'},
+        ],
+        exprContextCritical: false
     },
     eslint: {
         configFile: '.eslintrc',
         failOnError: true
     }
 };
-
 module.exports = webpackConfig;

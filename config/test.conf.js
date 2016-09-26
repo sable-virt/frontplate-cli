@@ -1,14 +1,6 @@
 'use strict';
-const merge = require('webpack-merge');
-
 module.exports = function (config) {
-    let webpackConfig = merge({}, require('./webpack.config'));
-    // entryをdeleteしないとwatch時に無駄なコンパイルが発生する
-    delete webpackConfig.entry;
-    // outputをdeleteしないとts-loader使った時などに、拡張子のない謎のファイルができることがある
-    delete webpackConfig.output;
     config.set({
-
         // base path that will be used to resolve all patterns (eg. files, exclude)
         basePath: '',
         // frameworks to use
@@ -17,19 +9,10 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'node_modules/power-assert/build/power-assert.js',
-            'node_modules/sinon/pkg/sinon.js',
-            'src/js/**/*-spec.js'
+            require.resolve('power-assert/build/power-assert'),
+            'public/assets/js/test.js'
         ],
         exclude: [],
-        preprocessors: {
-            'src/**/*-spec.js': ['webpack']
-        },
-        webpack: webpackConfig,
-        webpackMiddleware: {
-            //noInfo: true,
-            quiet: true
-        },
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
@@ -53,7 +36,7 @@ module.exports = function (config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
