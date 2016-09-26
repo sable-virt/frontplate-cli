@@ -3425,10 +3425,20 @@
         }
       }
     },
+    "karma-babel-preprocessor": {
+      "version": "6.0.1",
+      "from": "karma-babel-preprocessor@latest",
+      "resolved": "https://registry.npmjs.org/karma-babel-preprocessor/-/karma-babel-preprocessor-6.0.1.tgz"
+    },
     "karma-chrome-launcher": {
       "version": "2.0.0",
       "from": "karma-chrome-launcher@latest",
       "resolved": "https://registry.npmjs.org/karma-chrome-launcher/-/karma-chrome-launcher-2.0.0.tgz"
+    },
+    "karma-espower-preprocessor": {
+      "version": "1.1.0",
+      "from": "karma-espower-preprocessor@latest",
+      "resolved": "https://registry.npmjs.org/karma-espower-preprocessor/-/karma-espower-preprocessor-1.1.0.tgz"
     },
     "karma-mocha": {
       "version": "1.1.1",

@@ -2,8 +2,7 @@
 const webpack = require("webpack");
 const webpackConfig = {
     entry: {
-        'app': './src/js/app.js',
-        'test': './src/js/test.js'
+        'app': './src/js/app.js'
     },
     output: {
         path: 'public/assets/js',

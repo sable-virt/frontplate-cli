@@ -10,8 +10,17 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             require.resolve('power-assert/build/power-assert'),
-            'public/assets/js/test.js'
+            'src/js/**/*-spec.js'
         ],
+        preprocessors: {
+            'src/js/**/*-spec.js': ['babel']
+        },
+        babelPreprocessor: {
+            options: {
+                presets: ['es2015'],
+                sourceMap: 'inline'
+            }
+        },
         exclude: [],
         // test results reporter to use
         // possible values: 'dots', 'progress'
@@ -20,7 +29,6 @@ module.exports = function (config) {
         client: {
             captureConsole: true
         },
-
         // web server port
         port: 9001,
 
