@@ -1,36 +1,29 @@
 'use strict';
 const webpack = require("webpack");
 const webpackConfig = {
-  entry: {
-    'app': './src/js/app.js'
-  },
-  output: {
-    path: 'public/assets/js',
-    publicPath: '/assets',
-    filename: "[name].js",
-    sourceMapFilename: 'maps/[name].map',
-    jsonpFunction: 'fr'
-  },
-  resolve: {
-    modulesDirectories: [
-      'node_modules',
-      'src'
-    ]
-  },
-  module: {
-    preLoaders: [
-      { test: /\.js$/, exclude:/Spec\.js$/i, loaders: ['eslint'] }
-    ],
-    loaders: [
-      { test: /\.html$/, exclude:/node_modules/, loaders: ['html'] },
-      { test: /Spec\.js$/i, exclude:/node_modules/, loaders: ['webpack-espower','babel'] },
-      { test: /\.jsx?$/, exclude:/node_modules/, loaders: ['babel'] }
-    ]
-  },
-  eslint: {
-    configFile: '.eslintrc',
-    failOnError: true
-  }
+    entry: {
+        'app': './src/js/app.js'
+    },
+    output: {
+        path: 'public/assets/js',
+        publicPath: '/assets',
+        filename: "[name].js",
+        sourceMapFilename: 'maps/[name].map',
+        jsonpFunction: 'fr'
+    },
+    resolve: {
+        alias: {
+            // 'power-assert': 'power-assert/build/power-assert'
+        },
+        modulesDirectories: [
+            'node_modules',
+            'src'
+        ]
+    },
+    eslint: {
+        configFile: '.eslintrc',
+        failOnError: true
+    }
 };
 
 module.exports = webpackConfig;
