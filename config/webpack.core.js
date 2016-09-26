@@ -1,10 +1,9 @@
 'use strict';
 const webpack = require("webpack");
-const glob = require('glob');
 const webpackConfig = {
     entry: {
         'app': './src/js/app.js',
-        'test': glob.sync('./src/js/**/*-spec.js')
+        'test': './src/js/test.js'
     },
     output: {
         path: 'public/assets/js',
