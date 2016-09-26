@@ -18,5 +18,6 @@ spawn(argv.shift(), argv, {
     cwd: process.cwd(),
     env: env,
     stdio: 'inherit'
-}).on('exit', () => {
+}).on('exit', (code) => {
+    process.exit(code);
 });
