@@ -3,8 +3,11 @@ language: node_js
 node_js:
 - '6'
 - '5'
+- '4'
 script:
-  - npm version
+  - ./index.js --help
+  - ./index.js --version
+  - ./index.js build
 notifications:
   slack:
     secure: U1Ta+5fq1Np5Vig6D2qte0jvrnzHJc2DpKpgJSZOd8LGP3FWZ/t1vTT7sepY6WzMETuen0BGtO56wlCE2qFBAQUPIC5rkH71wy2hFE3WGjOuNSB6Sqpf9mfK6XvEQJRi9UDVlSDFuBHAftrnit855IyUEL7aZZWsvhdYUS+j4DQ=
