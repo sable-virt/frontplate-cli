@@ -22,7 +22,7 @@ const webpackConfig = {
         exprContextCritical: false
     },
     eslint: {
-        configFile: '.eslintrc',
+        configFile: __dirname + '/../.eslintrc',
         failOnError: true
     }
 };
