@@ -19,6 +19,12 @@ const webpackConfig = merge(core, {
     plugins: [
         new webpack.ProvidePlugin({
             assert: "power-assert",
+        }),
+        new webpack.DefinePlugin({
+            'NODE_ENV': 'development'
+        }),
+        new webpack.BannerPlugin('console.log("This script is development version.");', {
+            raw: true
         })
     ],
 });
