@@ -23,7 +23,7 @@ const webpackConfig = merge(core, {
         new webpack.DefinePlugin({
             'NODE_ENV': 'development'
         }),
-        new webpack.BannerPlugin('console.log("This script is development version.");', {
+        new webpack.BannerPlugin('console.warn("This script is development version.");', {
             raw: true
         })
     ],
