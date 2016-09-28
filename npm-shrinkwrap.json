@@ -1,6 +1,6 @@
 {
   "name": "frontplate-cli",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
