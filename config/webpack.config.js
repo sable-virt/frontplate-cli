@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const merge = require("webpack-merge");
 const core = require("./webpack.core");
 const webpackConfig = merge(core, {
+    debug: true,
     devtool: '#source-map',
     module: {
         loaders: [
