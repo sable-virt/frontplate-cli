@@ -11,8 +11,8 @@ const webpackConfig = merge(core, {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'babel?presets[]=es2015',
-                    'webpack-espower'
+                    'webpack-espower-loader',
+                    'babel?presets[]=es2015'
                 ]
             }
         ]
@@ -27,6 +27,6 @@ const webpackConfig = merge(core, {
         new webpack.BannerPlugin('console.warn("This script is development version.");', {
             raw: true
         })
-    ],
+    ]
 });
 module.exports = webpackConfig;
