@@ -10,8 +10,10 @@ const webpackConfig = merge(core,{
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel',
-                query: {presets: ['es2015'],plugins:['babel-plugin-unassert']}
+                loaders: [
+                    'babel?presets[]=es2015',
+                    'webpack-unassert'
+                ]
             }
         ]
     },
