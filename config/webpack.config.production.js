@@ -11,8 +11,8 @@ const webpackConfig = merge(core,{
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'babel?presets[]=es2015',
-                    'webpack-unassert'
+                    'webpack-unassert',
+                    'babel?presets[]=es2015'
                 ]
             }
         ]
@@ -23,7 +23,7 @@ const webpackConfig = merge(core,{
                 languageIn: 'ECMASCRIPT6',
                 languageOut: 'ECMASCRIPT5',
                 compilationLevel: 'ADVANCED',
-                warningLevel: 'VERBOSE',
+                warningLevel: 'QUIET',
             },
         }),
         //new webpack.optimize.CommonsChunkPlugin('app','app.js'),
