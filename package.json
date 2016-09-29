@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require intelli-espower-loader -R spec ./test/index.js",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0"
   },
   "repository": {
     "type": "git",
@@ -66,5 +67,13 @@
     "webpack-espower-loader": "^1.0.1",
     "webpack-merge": "^0.14.1",
     "webpack-unassert-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^1.2.0",
+    "espower-loader": "^1.0.1",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.0.2",
+    "power-assert": "^1.4.1",
+    "rimraf": "^2.5.4"
   }
 }
