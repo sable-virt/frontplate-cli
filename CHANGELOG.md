@@ -1,3 +1,22 @@
+<a name="0.0.12"></a>
+## [0.0.12](https://github.com/frontainer/frontplate-cli/compare/v0.0.11...v0.0.12) (2016-09-29)
+
+
+### doc
+
+* task command追加 & 不要になった記述を削除 ([282d29bb1c5c3a57e329833f199a66ee29b880fa](https://github.com/frontainer/frontplate-cli/commit/282d29bb1c5c3a57e329833f199a66ee29b880fa))
+
+### feat
+
+* add changelog ([93f362966e0702d3cde353ea6b2cbd3d96f46c8d](https://github.com/frontainer/frontplate-cli/commit/93f362966e0702d3cde353ea6b2cbd3d96f46c8d))
+* add unit testing ([abbf8c36068f6e4ea33b88349a210da464fd4975](https://github.com/frontainer/frontplate-cli/commit/abbf8c36068f6e4ea33b88349a210da464fd4975))
+
+### fix
+
+* configに引数統一できていない ([7796b3a763132c6283315465cabb42f1c39caa40](https://github.com/frontainer/frontplate-cli/commit/7796b3a763132c6283315465cabb42f1c39caa40))
+
+
+
 <a name="0.0.11"></a>
 ## [0.0.11](https://github.com/frontainer/frontplate-cli/compare/v0.0.10...v0.0.11) (2016-09-28)
 
