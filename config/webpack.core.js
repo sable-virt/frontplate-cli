@@ -1,9 +1,8 @@
 'use strict';
 const webpack = require("webpack");
+const glob = require('glob');
 const webpackConfig = {
-    entry: {
-        'app': './src/js/app.js'
-    },
+    entry: glob.sync('./src/js/!(*-spec).js'),
     output: {
         path: 'public/assets/js',
         publicPath: '/assets',
@@ -11,6 +10,7 @@ const webpackConfig = {
         sourceMapFilename: 'maps/[name].map',
         jsonpFunction: 'fr'
     },
+    resolve: { root: [ './src/js'] },
     module: {
         preLoaders: [
             {test: /\.js$/, exclude: /node_modules/, loader: 'eslint'}

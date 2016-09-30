@@ -1,3 +1,17 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/frontainer/frontplate-cli/compare/v0.1.0...v0.1.1) (2016-09-30)
+
+
+### feat
+
+* ./src/jsをrootパスに ([5482c9ba8951583ce2c4680e49b02fba543cab1d](https://github.com/frontainer/frontplate-cli/commit/5482c9ba8951583ce2c4680e49b02fba543cab1d))
+
+### fix
+
+* ビルドするjsを./src/js/xxxx.js(-spec.jsは除く)に修正 ([824855c9bd633eddde3231588b6fb4730d12a3fe](https://github.com/frontainer/frontplate-cli/commit/824855c9bd633eddde3231588b6fb4730d12a3fe))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/frontainer/frontplate-cli/compare/v0.0.12...v0.1.0) (2016-09-29)
 
