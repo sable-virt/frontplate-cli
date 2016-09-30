@@ -10,6 +10,7 @@ const webpackConfig = {
         sourceMapFilename: 'maps/[name].map',
         jsonpFunction: 'fr'
     },
+    resolve: { root: [ './src/js'] },
     module: {
         preLoaders: [
             {test: /\.js$/, exclude: /node_modules/, loader: 'eslint'}
