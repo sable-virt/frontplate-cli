@@ -1,3 +1,13 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/frontainer/frontplate-cli/compare/v0.1.3...v0.1.4) (2016-10-01)
+
+
+### feat
+
+* update packages ([81470504c94455ada8d481e3cf2335860181173f](https://github.com/frontainer/frontplate-cli/commit/81470504c94455ada8d481e3cf2335860181173f))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/frontainer/frontplate-cli/compare/v0.1.2...v0.1.3) (2016-10-01)
 
