@@ -1,3 +1,13 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/frontainer/frontplate-cli/compare/v0.1.1...v0.1.2) (2016-10-01)
+
+
+### fix
+
+* globですべてmain.jsになってしまったので差し戻し ([de8c73f749b478a63beeb257fd5e1964cc97b555](https://github.com/frontainer/frontplate-cli/commit/de8c73f749b478a63beeb257fd5e1964cc97b555))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/frontainer/frontplate-cli/compare/v0.1.0...v0.1.1) (2016-09-30)
 
