@@ -1,3 +1,13 @@
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/frontainer/frontplate-cli/compare/v0.1.2...v0.1.3) (2016-10-01)
+
+
+### fix
+
+* scss更新後に正しくビルドされない ([a811d05d292a7b47602978d1ad2956385567bd0e](https://github.com/frontainer/frontplate-cli/commit/a811d05d292a7b47602978d1ad2956385567bd0e))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/frontainer/frontplate-cli/compare/v0.1.1...v0.1.2) (2016-10-01)
 
