@@ -1,3 +1,17 @@
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/frontainer/frontplate-cli/compare/v0.1.4...v0.1.5) (2016-10-02)
+
+
+### feat
+
+* ダウンロードしたファイルのpackage.jsonにfrpプロパティがある場合に続けて依存ファイルをダウンロードする機能 ([d6464be1ecbb7c5a087a12d5f91e82b60b7c9496](https://github.com/frontainer/frontplate-cli/commit/d6464be1ecbb7c5a087a12d5f91e82b60b7c9496))
+
+### fix
+
+* configの引数がオプションになってしまっている ([64713370f01252d8c756c61a5755ce6259d1e716](https://github.com/frontainer/frontplate-cli/commit/64713370f01252d8c756c61a5755ce6259d1e716))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/frontainer/frontplate-cli/compare/v0.1.3...v0.1.4) (2016-10-01)
 
