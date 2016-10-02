@@ -7,7 +7,7 @@ const util = require('./lib/util');
 const pkg = require('./package.json');
 updateNotifier({pkg}).notify();
 
-const localScript = util.getLocalScript();
+const localScript = path.join(__dirname, 'frp.js');
 const localConf = util.getLocalConfig();
 let argv = process.argv;
 argv[1] = localScript;

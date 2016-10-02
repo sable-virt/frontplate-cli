@@ -30,9 +30,6 @@ describe('install', function () {
     it('getLocalConfig', () => {
         assert(util.getLocalConfig() === process.cwd() + '/frp.config.js');
     });
-    it('getLocalScript', () => {
-        assert(util.getLocalScript() === process.cwd() + '/lib/frp.js');
-    });
     it('destPath', () => {
         assert(util.destPath('*.js', 'public', 'test.js') === 'public/test.js');
         assert(util.destPath('js/*.js', 'public', 'test.js') === 'public/test.js');
