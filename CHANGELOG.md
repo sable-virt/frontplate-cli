@@ -1,3 +1,13 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/frontainer/frontplate-cli/compare/v0.1.5...v0.1.6) (2016-10-02)
+
+
+### fix
+
+* ローカルにインストールされたスクリプトを呼ぶと処理位置がわからなくなるので廃止 ([910f89d684ac35edd0904a5cf5a159c9f9f8e1b5](https://github.com/frontainer/frontplate-cli/commit/910f89d684ac35edd0904a5cf5a159c9f9f8e1b5))
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/frontainer/frontplate-cli/compare/v0.1.4...v0.1.5) (2016-10-02)
 
