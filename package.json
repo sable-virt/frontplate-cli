@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://frontainer@github.com/frontainer/frontplate-cli.git"
   },
-  "keywords": [],
+  "keywords": ["frontplate","cli","front-end","development","template"],
   "author": "frontainer",
   "license": "MIT",
   "bugs": {
