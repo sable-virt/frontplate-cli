@@ -1,3 +1,13 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/frontainer/frontplate-cli/compare/v0.1.6...v0.1.7) (2016-10-02)
+
+
+### fix
+
+* scriptパス間違い ([52f241874eabb3468da70e08e8d77237a81c625c](https://github.com/frontainer/frontplate-cli/commit/52f241874eabb3468da70e08e8d77237a81c625c))
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/frontainer/frontplate-cli/compare/v0.1.5...v0.1.6) (2016-10-02)
 
