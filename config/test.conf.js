@@ -1,4 +1,9 @@
 'use strict';
+/**
+ * karma conf
+ * @param config
+ * url: https://karma-runner.github.io/1.0/config/configuration-file.html
+ */
 module.exports = function (config) {
     config.set({
         // base path that will be used to resolve all patterns (eg. files, exclude)

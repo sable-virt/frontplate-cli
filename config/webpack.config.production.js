@@ -3,6 +3,10 @@ const webpack = require("webpack");
 const merge = require("webpack-merge");
 const ClosureCompiler = require.main.require('google-closure-compiler-js').webpack;
 const core = require("./webpack.core");
+/**
+ * webpack config for production
+ * url: https://webpack.github.io/docs/configuration.html
+ */
 const webpackConfig = merge(core,{
     devtool: '#source-map',
     module: {
