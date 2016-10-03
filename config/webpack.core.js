@@ -1,5 +1,9 @@
 'use strict';
 const webpack = require("webpack");
+/**
+ * webpack config
+ * url: https://webpack.github.io/docs/configuration.html
+ */
 const webpackConfig = {
     entry: {
         app: './src/js/app.js'

@@ -2,6 +2,10 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
 const core = require("./webpack.core");
+/**
+ * webpack config
+ * url: https://webpack.github.io/docs/configuration.html
+ */
 const webpackConfig = merge(core, {
     debug: true,
     devtool: '#source-map',

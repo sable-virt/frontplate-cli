@@ -1,3 +1,13 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/frontainer/frontplate-cli/compare/v0.1.7...v0.1.8) (2016-10-03)
+
+
+### doc
+
+* add comments ([15ab64eb8e5a9653a37ca1e29b9350a162d30d4d](https://github.com/frontainer/frontplate-cli/commit/15ab64eb8e5a9653a37ca1e29b9350a162d30d4d))
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/frontainer/frontplate-cli/compare/v0.1.6...v0.1.7) (2016-10-02)
 
