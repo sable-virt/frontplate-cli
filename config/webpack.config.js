@@ -7,7 +7,6 @@ const core = require("./webpack.core");
  * url: https://webpack.github.io/docs/configuration.html
  */
 const webpackConfig = merge(core, {
-    debug: true,
     devtool: '#source-map',
     module: {
         loaders: [
@@ -28,7 +27,8 @@ const webpackConfig = merge(core, {
         new webpack.DefinePlugin({
             'NODE_ENV': 'development'
         }),
-        new webpack.BannerPlugin('console.warn("This script is development version.");', {
+        new webpack.BannerPlugin({
+            banner: 'console.warn("This script is development version.");',
             raw: true
         })
     ]
