@@ -1,5 +1,5 @@
 {
   "presets": [
-    ["es2015", { "modules": ["amd", "umd", "systemjs", "commonjs"] }]
+    ["es2015", { "modules": false }]
   ]
 }

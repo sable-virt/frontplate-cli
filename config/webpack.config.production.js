@@ -8,16 +8,12 @@ const core = require("./webpack.core");
  * url: https://webpack.github.io/docs/configuration.html
  */
 const webpackConfig = merge(core,{
-    devtool: '#source-map',
     module: {
         loaders: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loaders: [
-                    'webpack-unassert',
-                    'babel?presets[]=es2015'
-                ]
+                loader: 'babel?babelrc=' + __dirname + '/../.babelrc'
             }
         ]
     },
@@ -32,11 +28,12 @@ const webpackConfig = merge(core,{
         }),
         // new webpack.optimize.CommonsChunkPlugin('app','app.js'),
         new webpack.optimize.AggressiveMergingPlugin(),
-        new webpack.optimize.AggressiveSplittingPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.DefinePlugin({
-            'NODE_ENV': 'production'
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
         })
     ],
 });
