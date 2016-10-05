@@ -30,9 +30,10 @@ const webpackConfig = merge(core,{
                 warningLevel: 'QUIET',
             },
         }),
-        //new webpack.optimize.CommonsChunkPlugin('app','app.js'),
+        // new webpack.optimize.CommonsChunkPlugin('app','app.js'),
         new webpack.optimize.AggressiveMergingPlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.AggressiveSplittingPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.DefinePlugin({
             'NODE_ENV': 'production'
