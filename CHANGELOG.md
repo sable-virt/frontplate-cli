@@ -1,3 +1,13 @@
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/frontainer/frontplate-cli/compare/v0.2.3...v0.2.4) (2016-10-06)
+
+
+### feat
+
+* basePathを一括で変更できるようにcore.config.jsを追加 ([07010ab0d6a9e665c401b6e4e7d10396cb9a98ac](https://github.com/frontainer/frontplate-cli/commit/07010ab0d6a9e665c401b6e4e7d10396cb9a98ac))
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/frontainer/frontplate-cli/compare/v0.2.2...v0.2.3) (2016-10-06)
 
