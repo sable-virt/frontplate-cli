@@ -1,3 +1,13 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/frontainer/frontplate-cli/compare/v0.2.1...v0.2.2) (2016-10-06)
+
+
+### fix
+
+* styleとimageのwatchタスクがエラーになる ([09d9ba3c3f7c6975ba6dda3e339d8a9b033d638c](https://github.com/frontainer/frontplate-cli/commit/09d9ba3c3f7c6975ba6dda3e339d8a9b033d638c))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/frontainer/frontplate-cli/compare/v0.2.0...v0.2.1) (2016-10-06)
 
