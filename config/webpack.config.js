@@ -7,28 +7,24 @@ const core = require("./webpack.core");
  * url: https://webpack.github.io/docs/configuration.html
  */
 const webpackConfig = merge(core, {
-    debug: true,
     devtool: '#source-map',
     module: {
         loaders: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loaders: [
-                    'webpack-espower-loader',
-                    'babel?presets[]=es2015'
-                ]
+                loader: 'babel?babelrc=' + __dirname + '/../.babelrc'
             }
         ]
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            assert: "power-assert",
-        }),
         new webpack.DefinePlugin({
-            'NODE_ENV': 'development'
+            'process.env': {
+                'NODE_ENV': JSON.stringify('development')
+            }
         }),
-        new webpack.BannerPlugin('console.warn("This script is development version.");', {
+        new webpack.BannerPlugin({
+            banner: 'console.warn("This script is development version.");',
             raw: true
         })
     ]
