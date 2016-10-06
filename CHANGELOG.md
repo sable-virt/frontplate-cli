@@ -1,3 +1,23 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/frontainer/frontplate-cli/compare/v0.1.8...v0.2.0) (2016-10-06)
+
+
+### breaking
+
+* babel関連の設定をwebpack.configから.babelrcへ ([a599fb14b0d90a2432a887362dd2b2ca6f93d5a5](https://github.com/frontainer/frontplate-cli/commit/a599fb14b0d90a2432a887362dd2b2ca6f93d5a5))
+* mocha + power-assertからjasmineに ([f77e11987d9f6f4c780f8f8977688063d812c665](https://github.com/frontainer/frontplate-cli/commit/f77e11987d9f6f4c780f8f8977688063d812c665))
+* webpack2用に設定をマイグレーション ([bd03e0d62844023d2dd33f4cab0727048411c8b8](https://github.com/frontainer/frontplate-cli/commit/bd03e0d62844023d2dd33f4cab0727048411c8b8))
+
+### feat
+
+* production build時にwebpack.optimize.AggressiveSplittingPluginを実行 ([29308a8269595e0a627b6cdd20ad8bc609f855b6](https://github.com/frontainer/frontplate-cli/commit/29308a8269595e0a627b6cdd20ad8bc609f855b6))
+
+### fix
+
+* entryが空だとエラーになる ([bb13f1efb3328de74e4d89eb9c99156a47ce7bb1](https://github.com/frontainer/frontplate-cli/commit/bb13f1efb3328de74e4d89eb9c99156a47ce7bb1))
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/frontainer/frontplate-cli/compare/v0.1.7...v0.1.8) (2016-10-03)
 
