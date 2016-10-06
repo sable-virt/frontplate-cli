@@ -1,3 +1,13 @@
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/frontainer/frontplate-cli/compare/v0.2.2...v0.2.3) (2016-10-06)
+
+
+### fix
+
+* -spec.js内でimportできない ([ff8fd29f3d786d1815156de541b89126f258d031](https://github.com/frontainer/frontplate-cli/commit/ff8fd29f3d786d1815156de541b89126f258d031))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/frontainer/frontplate-cli/compare/v0.2.1...v0.2.2) (2016-10-06)
 
