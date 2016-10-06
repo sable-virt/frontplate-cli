@@ -1,6 +1,8 @@
+'use strict';
+const core = require('./core.config');
 module.exports = {
     src: 'src/view/**/*.ejs',   // 読み込むビューファイル
-    dest: 'public',             // 出力先
+    dest: core.basePath,        // 出力先
     params: {                   // ビューで使うグローバル変数
         title: 'title'
     },

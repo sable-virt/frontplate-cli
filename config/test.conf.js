@@ -19,6 +19,9 @@ module.exports = function (config) {
         preprocessors: {
             'src/js/**/*-spec.js': ['webpack','babel']
         },
+        webpack: {
+            resolve: { modules: [ './src/js'] },
+        },
         webpackMiddleware: {
             quiet: true,
             stats: 'errors-only'
