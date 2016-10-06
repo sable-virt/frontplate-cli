@@ -17,13 +17,11 @@ module.exports = function (config) {
             'src/js/**/*-spec.js'
         ],
         preprocessors: {
-            'src/js/**/*-spec.js': ['babel']
+            'src/js/**/*-spec.js': ['webpack','babel']
         },
-        babelPreprocessor: {
-            options: {
-                presets: ['es2015'],
-                sourceMap: 'inline'
-            }
+        webpackMiddleware: {
+            quiet: true,
+            stats: 'errors-only'
         },
         exclude: [],
         // test results reporter to use

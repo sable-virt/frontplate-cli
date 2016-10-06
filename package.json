@@ -1,6 +1,6 @@
 {
   "name": "frontplate-cli",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -58,6 +58,7 @@
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
+    "karma-webpack": "^1.8.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.1",
     "ora": "^0.3.0",
