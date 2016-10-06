@@ -1,3 +1,13 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/frontainer/frontplate-cli/compare/v0.2.0...v0.2.1) (2016-10-06)
+
+
+### fix
+
+* テストに失敗してもSucceededが表示されている ([18bb924b9e379e791cba5676847db6d7895b8b3d](https://github.com/frontainer/frontplate-cli/commit/18bb924b9e379e791cba5676847db6d7895b8b3d))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/frontainer/frontplate-cli/compare/v0.1.8...v0.2.0) (2016-10-06)
 
