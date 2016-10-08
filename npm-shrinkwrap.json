@@ -1878,9 +1878,9 @@
       "resolved": "https://registry.npmjs.org/escope/-/escope-3.6.0.tgz"
     },
     "eslint": {
-      "version": "3.7.0",
-      "from": "eslint@3.7.0",
-      "resolved": "https://registry.npmjs.org/eslint/-/eslint-3.7.0.tgz",
+      "version": "3.7.1",
+      "from": "eslint@3.7.1",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-3.7.1.tgz",
       "dependencies": {
         "acorn": {
           "version": "4.0.3",
@@ -2258,9 +2258,9 @@
       "resolved": "https://registry.npmjs.org/fresh/-/fresh-0.3.0.tgz"
     },
     "frontnote": {
-      "version": "2.0.3",
-      "from": "frontnote@latest",
-      "resolved": "https://registry.npmjs.org/frontnote/-/frontnote-2.0.3.tgz"
+      "version": "2.0.4",
+      "from": "frontnote@2.0.4",
+      "resolved": "https://registry.npmjs.org/frontnote/-/frontnote-2.0.4.tgz"
     },
     "fs-access": {
       "version": "1.0.0",
@@ -3028,9 +3028,9 @@
       "resolved": "https://registry.npmjs.org/github-url-from-git/-/github-url-from-git-1.4.0.tgz"
     },
     "glob": {
-      "version": "7.1.0",
-      "from": "glob@latest",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.0.tgz"
+      "version": "7.1.1",
+      "from": "glob@7.1.1",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.1.tgz"
     },
     "glob-base": {
       "version": "0.3.0",
