@@ -1,5 +1,15 @@
-<a name="0.2.5"></a>
-## [0.2.5](https://github.com/frontainer/frontplate-cli/compare/v0.2.4...v0.2.5) (2016-10-08)
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/frontainer/frontplate-cli/compare/v0.3.0...v0.3.1) (2016-10-08)
+
+
+### temp
+
+* テンプレートダウンロード先をdevelopブランチに ([a533fc3d7f4b3b2dd599b35a6d2c9a8149b7e0cb](https://github.com/frontainer/frontplate-cli/commit/a533fc3d7f4b3b2dd599b35a6d2c9a8149b7e0cb))
+
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/frontainer/frontplate-cli/compare/v0.2.4...v0.3.0) (2016-10-08)
 
 
 ### feat
