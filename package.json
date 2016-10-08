@@ -3,6 +3,9 @@
   "version": "0.2.4",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "scripts": {
     "test": "mocha --require intelli-espower-loader -R spec ./test/index.js",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0"
