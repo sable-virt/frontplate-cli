@@ -67,6 +67,7 @@
     "node-sass": "^3.10.1",
     "ora": "^0.3.0",
     "postcss": "^5.2.4",
+    "postcss-csso": "^1.1.2",
     "rimraf": "^2.5.4",
     "rxjs": "^5.0.0-beta.12",
     "sass-lint": "^1.9.1",
