@@ -6,7 +6,7 @@ module.exports = function(production) {
         },
         html: require('./config/html.config'),
         image: require('./config/image.config'),
-        style: require('./config/style.config'),
+        style: production ? require('./config/style.config.production') : require('./config/style.config'),
         script: production ? require('./config/webpack.config.production') : require('./config/webpack.config'),
         server: require('./config/server.config'),
         copy: require('./config/copy.config'),
