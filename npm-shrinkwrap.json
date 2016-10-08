@@ -1,6 +1,6 @@
 {
   "name": "frontplate-cli",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
@@ -1878,9 +1878,9 @@
       "resolved": "https://registry.npmjs.org/escope/-/escope-3.6.0.tgz"
     },
     "eslint": {
-      "version": "3.7.0",
-      "from": "eslint@3.7.0",
-      "resolved": "https://registry.npmjs.org/eslint/-/eslint-3.7.0.tgz",
+      "version": "3.7.1",
+      "from": "eslint@3.7.1",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-3.7.1.tgz",
       "dependencies": {
         "acorn": {
           "version": "4.0.3",
@@ -2256,6 +2256,11 @@
       "version": "0.3.0",
       "from": "fresh@>=0.3.0 <0.4.0",
       "resolved": "https://registry.npmjs.org/fresh/-/fresh-0.3.0.tgz"
+    },
+    "frontnote": {
+      "version": "2.0.4",
+      "from": "frontnote@2.0.4",
+      "resolved": "https://registry.npmjs.org/frontnote/-/frontnote-2.0.4.tgz"
     },
     "fs-access": {
       "version": "1.0.0",
@@ -3023,9 +3028,9 @@
       "resolved": "https://registry.npmjs.org/github-url-from-git/-/github-url-from-git-1.4.0.tgz"
     },
     "glob": {
-      "version": "7.1.0",
-      "from": "glob@latest",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.0.tgz"
+      "version": "7.1.1",
+      "from": "glob@7.1.1",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.1.tgz"
     },
     "glob-base": {
       "version": "0.3.0",
@@ -4305,10 +4310,20 @@
       "from": "map-obj@>=1.0.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz"
     },
+    "marked": {
+      "version": "0.3.6",
+      "from": "marked@>=0.3.3 <0.4.0",
+      "resolved": "https://registry.npmjs.org/marked/-/marked-0.3.6.tgz"
+    },
     "media-typer": {
       "version": "0.3.0",
       "from": "media-typer@0.3.0",
       "resolved": "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz"
+    },
+    "memory-cache": {
+      "version": "0.1.6",
+      "from": "memory-cache@>=0.1.6 <0.2.0",
+      "resolved": "https://registry.npmjs.org/memory-cache/-/memory-cache-0.1.6.tgz"
     },
     "memory-fs": {
       "version": "0.3.0",
@@ -5251,6 +5266,11 @@
       "version": "5.0.1",
       "from": "safe-buffer@>=5.0.1 <6.0.0",
       "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz"
+    },
+    "sanitizer": {
+      "version": "0.1.3",
+      "from": "sanitizer@>=0.1.3 <0.2.0",
+      "resolved": "https://registry.npmjs.org/sanitizer/-/sanitizer-0.1.3.tgz"
     },
     "sass-graph": {
       "version": "2.1.2",

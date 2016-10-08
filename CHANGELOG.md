@@ -1,3 +1,14 @@
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/frontainer/frontplate-cli/compare/v0.2.4...v0.2.5) (2016-10-08)
+
+
+### feat
+
+* 1つのビューテンプレートから複数HTMLを出力 ([8cea58c58b26d04e6e3531e99937e25f8d35650f](https://github.com/frontainer/frontplate-cli/commit/8cea58c58b26d04e6e3531e99937e25f8d35650f))
+* スタイルガイド生成にfrontnote追加 ([ce2919960fa13bbc2a85159cd0fade0f4170e752](https://github.com/frontainer/frontplate-cli/commit/ce2919960fa13bbc2a85159cd0fade0f4170e752))
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/frontainer/frontplate-cli/compare/v0.2.3...v0.2.4) (2016-10-06)
 

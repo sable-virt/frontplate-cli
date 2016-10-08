@@ -1,8 +1,11 @@
 {
   "name": "frontplate-cli",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "scripts": {
     "test": "mocha --require intelli-espower-loader -R spec ./test/index.js",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0"
@@ -41,11 +44,12 @@
     "cross-spawn": "^4.0.2",
     "download-github-repo": "^0.1.3",
     "ejs": "^2.5.2",
-    "eslint": "^3.7.0",
+    "eslint": "^3.7.1",
     "eslint-loader": "^1.5.0",
+    "frontnote": "^2.0.4",
     "fs-extra": "^0.30.0",
     "gaze": "^1.1.2",
-    "glob": "^7.1.0",
+    "glob": "^7.1.1",
     "glob-base": "^0.3.0",
     "google-closure-compiler-js": "^20160916.0.0",
     "html-loader": "^0.4.4",

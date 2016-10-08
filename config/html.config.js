@@ -6,6 +6,16 @@ module.exports = {
     params: {                   // ビューで使うグローバル変数
         title: 'title'
     },
+    // １つのテンプレートで複数作成するときに使用する
+    pages: [
+        // {
+        //     name: 'filename',    // 出力するファイル名
+        //     src: 'src/view/tmpl/_template.ejs',  // テンプレート
+        //     params: {       // ページに渡す変数
+        //         title: 'page title'
+        //     }
+        // }
+    ],
     // htmlhintルール(https://github.com/yaniswang/HTMLHint/wiki/Rules)
     rules: {
         "tagname-lowercase": true,
