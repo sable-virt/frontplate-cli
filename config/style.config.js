@@ -12,5 +12,13 @@ module.exports = {
         require('autoprefixer')({   // autoprefixer(https://github.com/postcss/autoprefixer)
             browsers: SUPPORT_BROWSERS
         })
-    ]
+    ],
+    styleguide: {
+        title: 'StyleGuide',
+        verbose: false,
+        clean: true,
+        params: {},
+        css: '../public/assets/css/style.css',
+        // script: '../public/assets/js/app.js',
+    }
 };
