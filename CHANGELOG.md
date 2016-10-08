@@ -1,3 +1,13 @@
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/frontainer/frontplate-cli/compare/v0.3.1...v0.3.2) (2016-10-08)
+
+
+### feat
+
+* production時にcssもsourcemapなしの最適化した形で出力 ([a0c97ab52dc3e052dd8914908679d72de3a8f421](https://github.com/frontainer/frontplate-cli/commit/a0c97ab52dc3e052dd8914908679d72de3a8f421))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/frontainer/frontplate-cli/compare/v0.3.0...v0.3.1) (2016-10-08)
 
