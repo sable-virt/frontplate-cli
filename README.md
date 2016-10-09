@@ -31,9 +31,9 @@ npm i frontplate-cli -g
 frp create <APP_NAME> [options]
 ```
 
-options
-
+- -b, --branch: template branch name
 - -p, --preset: Preset template name
+- -g, --github: template's github name (ex: frontainer/frontplate)
 
 templates
 
