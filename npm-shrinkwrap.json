@@ -1,6 +1,6 @@
 {
   "name": "frontplate-cli",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
@@ -6251,6 +6251,11 @@
           "resolved": "https://registry.npmjs.org/mime/-/mime-1.3.4.tgz"
         }
       }
+    },
+    "webpack-entries": {
+      "version": "1.0.0",
+      "from": "webpack-entries@latest",
+      "resolved": "https://registry.npmjs.org/webpack-entries/-/webpack-entries-1.0.0.tgz"
     },
     "webpack-merge": {
       "version": "0.14.1",
