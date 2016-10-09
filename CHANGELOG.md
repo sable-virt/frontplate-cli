@@ -1,3 +1,13 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/frontainer/frontplate-cli/compare/v1.0.1...v1.0.2) (2016-10-09)
+
+
+### fix
+
+* frp create --branchオプションを使うとエラーになる ([7d4e80cf96979d898188db3d949f07a6af7cbcea](https://github.com/frontainer/frontplate-cli/commit/7d4e80cf96979d898188db3d949f07a6af7cbcea))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/frontainer/frontplate-cli/compare/v1.0.0...v1.0.1) (2016-10-09)
 
