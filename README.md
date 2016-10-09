@@ -11,7 +11,7 @@ This CLI is still beta version.
 - JSモジュールバンドラー([webpack](https://www.npmjs.com/package/webpack))
 - ES2015([babel](https://www.npmjs.com/package/babel))
 - スプライト画像の作成とSassファイルの出力([spritesmith](https://www.npmjs.com/package/spritesmith))
-- CSS/JSの圧縮と最適化([google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler))
+- CSS/JSの圧縮と最適化([postcss-csso](https://www.npmjs.com/package/postcss-csso) [google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler))
 - CSSのベンダープレフィックス付与自動化([autoprefixer](https://www.npmjs.com/package/autoprefixer))
 - ユニットテスト([karma](https://www.npmjs.com/package/karma) [jasmine](https://www.npmjs.com/package/jasmine))
 - LiveReload([browser-sync](https://www.npmjs.com/package/browser-sync))
@@ -43,7 +43,7 @@ templates
 ### Build project
 
 ```
-frp build
+frp build [options]
 ```
 
 options
@@ -64,10 +64,14 @@ options
 ### Execute single task
 
 ```
-frp task <TASK_NAME>
+frp task <TASK_NAME> [options]
 ```
 
 TASK_NAME(clean|copy|html|image|script|server|sprite|style|test)
+
+options
+
+- -p, --production
 
 ### Create config files
 
@@ -78,7 +82,7 @@ frp init
 ## 想定される構成
 
 ```
-package.json - nomパッケージ設定ファイル
+package.json - npmパッケージ設定ファイル
 frp.config.js - テンプレートの全体の設定ファイル。出力先や各タスクの設定を記述
 /public - コンパイルされたデータが入っている
 /config - 設定用フォルダ
