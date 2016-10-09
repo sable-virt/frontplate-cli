@@ -1,6 +1,6 @@
 # frontplate-cli
 
-This CLI is still beta version.
+CLI for Front-end developers.
 
 ## Feature
 
