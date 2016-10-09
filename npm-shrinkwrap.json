@@ -6252,6 +6252,11 @@
         }
       }
     },
+    "webpack-entries": {
+      "version": "1.0.0",
+      "from": "webpack-entries@latest",
+      "resolved": "https://registry.npmjs.org/webpack-entries/-/webpack-entries-1.0.0.tgz"
+    },
     "webpack-merge": {
       "version": "0.14.1",
       "from": "webpack-merge@latest",

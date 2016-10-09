@@ -1,14 +1,13 @@
 'use strict';
 const core = require('./core.config');
 const webpack = require("webpack");
+const entries = require("webpack-entries");
 /**
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
  */
 const webpackConfig = {
-    entry: {
-        app: './src/js/app.js'
-    },
+    entry: entries('./src/js/!(_*|*-spec).js',true),
     output: {
         path: core.basePath + '/assets/js',
         publicPath: '/assets',
