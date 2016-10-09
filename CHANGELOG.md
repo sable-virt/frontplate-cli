@@ -5,6 +5,7 @@
 ### feat
 
 * versionが表記されたテキストを出力 ([12f8c460ac818025e109ce1ac65fcf6dd877edce](https://github.com/frontainer/frontplate-cli/commit/12f8c460ac818025e109ce1ac65fcf6dd877edce))
+* 指定ブランチからプロジェクトを生成できるようにfrp createに-b --branchオプションを追加 ([a0c5c993840a6ecf4105b76c5ef344d0a4141693](https://github.com/frontainer/frontplate-cli/commit/a0c5c993840a6ecf4105b76c5ef344d0a4141693))
 
 
 
