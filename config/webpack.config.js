@@ -13,7 +13,7 @@ const webpackConfig = merge(core, {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel?babelrc=' + __dirname + '/../.babelrc'
+                loader: 'babel'
             }
         ]
     },
