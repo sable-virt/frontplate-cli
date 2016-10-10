@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/frontainer/frontplate-cli/compare/v1.0.2...v1.1.0) (2016-10-10)
+
+
+### feat
+
+* 差分で設定を変更できるように ([b44380658885d7871d5c6f752bc6dd79fb2ecdb6](https://github.com/frontainer/frontplate-cli/commit/b44380658885d7871d5c6f752bc6dd79fb2ecdb6))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/frontainer/frontplate-cli/compare/v1.0.1...v1.0.2) (2016-10-09)
 
