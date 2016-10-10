@@ -3,6 +3,7 @@ const assert = require('power-assert');
 const fs = require('fs');
 const rimraf = require('rimraf');
 const util = require('../lib/util');
+const merge = require('webpack-merge');
 describe('install', function () {
     beforeEach(() => {
         // rimraf.sync(DEST);
@@ -53,7 +54,7 @@ describe('install', function () {
         assert.deepEqual(util.flatten(util.flatten([['a', ['b']], ['c']])), ['a', 'b', 'c']);
     });
     it('getConfig', () => {
-        assert.deepEqual(util.getConfig({}),{
+        assert.deepEqual(util.getConfig({}),merge(require('../frp.config')(),{
                 clean: {
                     src: 'public'
                 },
@@ -65,8 +66,8 @@ describe('install', function () {
                 copy: require('../config/copy.config'),
                 sprite: require('../config/sprite.config'),
                 test: require('../config/test.conf')
-            });
-        assert.deepEqual(util.getConfig({production:true}),{
+            }));
+        assert.deepEqual(util.getConfig({production:true}),merge(require('../frp.config')({production:true}),{
             clean: {
                 src: 'public'
             },
@@ -78,6 +79,6 @@ describe('install', function () {
             copy: require('../config/copy.config'),
             sprite: require('../config/sprite.config'),
             test: require('../config/test.conf')
-        });
+        }));
     });
 });

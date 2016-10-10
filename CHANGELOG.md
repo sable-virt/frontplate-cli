@@ -1,3 +1,14 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/frontainer/frontplate-cli/compare/v1.1.0...v1.1.1) (2016-10-10)
+
+
+### fix
+
+* babelrcの設定が反映されていない ([8a14f66317bfc89a99c5013a312841bac199637c](https://github.com/frontainer/frontplate-cli/commit/8a14f66317bfc89a99c5013a312841bac199637c))
+* merge後のユニットテスト結果が一致していない ([ac24a305d0ba824b7a3952fe6f9296dc816339d0](https://github.com/frontainer/frontplate-cli/commit/ac24a305d0ba824b7a3952fe6f9296dc816339d0))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/frontainer/frontplate-cli/compare/v1.0.2...v1.1.0) (2016-10-10)
 

@@ -30,6 +30,9 @@ const webpackConfig = {
                 eslint: {
                     configFile: __dirname + '/../.eslintrc',
                     failOnError: true
+                },
+                babel: {
+                    presets: ["es2015"]
                 }
             }
         })
