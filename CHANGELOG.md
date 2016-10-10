@@ -1,3 +1,13 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/frontainer/frontplate-cli/compare/v1.1.2...v1.1.3) (2016-10-10)
+
+
+### fix
+
+* ユニットテスト用のファイル名を*-spec.jsではなく*spec.jsに ([eaf58d650582f74837b25ee9bc67a3ba0ac11a40](https://github.com/frontainer/frontplate-cli/commit/eaf58d650582f74837b25ee9bc67a3ba0ac11a40))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/frontainer/frontplate-cli/compare/v1.1.1...v1.1.2) (2016-10-10)
 
