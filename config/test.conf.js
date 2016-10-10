@@ -14,10 +14,10 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'src/js/**/*-spec.js'
+            'src/js/**/*spec.js'
         ],
         preprocessors: {
-            'src/js/**/*-spec.js': ['webpack','babel']
+            'src/js/**/*spec.js': ['webpack','babel']
         },
         webpack: {
             resolve: { modules: [ './src/js'] },

@@ -7,7 +7,7 @@ const entries = require("webpack-entries");
  * url: https://webpack.github.io/docs/configuration.html
  */
 const webpackConfig = {
-    entry: entries('./src/js/!(_*|*-spec).js',true),
+    entry: entries('./src/js/!(_*|*spec).js',true),
     output: {
         path: core.basePath + '/assets/js',
         publicPath: '/assets',
