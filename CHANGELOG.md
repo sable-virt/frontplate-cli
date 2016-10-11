@@ -1,3 +1,14 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/frontainer/frontplate-cli/compare/v1.1.3...v1.1.4) (2016-10-11)
+
+
+### fix
+
+* imageタスクで階層構造が維持されない ([a3e389bf2f436acc6f99bf33d1cdfd1d84b8e25c](https://github.com/frontainer/frontplate-cli/commit/a3e389bf2f436acc6f99bf33d1cdfd1d84b8e25c))
+* 配列0件に対するレスポンスをシンプルなRx.Observable.of([])に変更 ([de09e1e90ac8cf148b29f100d63302251f443ef1](https://github.com/frontainer/frontplate-cli/commit/de09e1e90ac8cf148b29f100d63302251f443ef1))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/frontainer/frontplate-cli/compare/v1.1.2...v1.1.3) (2016-10-10)
 
