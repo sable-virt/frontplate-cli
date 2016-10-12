@@ -1,3 +1,14 @@
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/frontainer/frontplate-cli/compare/v1.1.4...v1.1.5) (2016-10-12)
+
+
+### fix
+
+* frpをグローバルにインストールした後、npm -g listするとエラーが出ている #3 ([2e2d5863cc1d49c98349e93d55ac53a34aa13488](https://github.com/frontainer/frontplate-cli/commit/2e2d5863cc1d49c98349e93d55ac53a34aa13488))
+* imageminで画像が圧縮できていない ([c24aa60baf55d07f9f9a4bcf19414761ed556dd0](https://github.com/frontainer/frontplate-cli/commit/c24aa60baf55d07f9f9a4bcf19414761ed556dd0))
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/frontainer/frontplate-cli/compare/v1.1.3...v1.1.4) (2016-10-11)
 
