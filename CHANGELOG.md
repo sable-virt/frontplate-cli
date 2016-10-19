@@ -1,3 +1,17 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/frontainer/frontplate-cli/compare/v1.1.5...v1.2.0) (2016-10-19)
+
+
+### add
+
+* frp createコマンドに -y,--yarn オプションを追加。 npm installの代わりにyarn installを実行する ([b1463c244a7e9cfbbf96b33d2802cfadd5554561](https://github.com/frontainer/frontplate-cli/commit/b1463c244a7e9cfbbf96b33d2802cfadd5554561))
+
+### break
+
+* core.configが指定として複雑になっていたのでグローバル変数FRP_DESTで定義 ([0aa50d697dc9328e318239378a558b505daa9ef5](https://github.com/frontainer/frontplate-cli/commit/0aa50d697dc9328e318239378a558b505daa9ef5))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/frontainer/frontplate-cli/compare/v1.1.4...v1.1.5) (2016-10-12)
 
