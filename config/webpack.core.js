@@ -1,15 +1,14 @@
 'use strict';
-const core = require('./core.config');
 const webpack = require("webpack");
 const entries = require("webpack-entries");
 /**
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
  */
-const webpackConfig = {
+module.exports = {
     entry: entries('./src/js/!(_*|*spec).js',true),
     output: {
-        path: core.basePath + '/assets/js',
+        path: FRP_DEST + '/assets/js',
         publicPath: '/assets',
         filename: "[name].js",
         sourceMapFilename: 'maps/[name].map',
@@ -38,4 +37,3 @@ const webpackConfig = {
         })
     ]
 };
-module.exports = webpackConfig;

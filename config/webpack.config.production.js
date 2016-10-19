@@ -7,7 +7,7 @@ const core = require("./webpack.core");
  * webpack config for production
  * url: https://webpack.github.io/docs/configuration.html
  */
-const webpackConfig = merge(core,{
+module.exports = merge(core, {
     module: {
         loaders: [
             {
@@ -29,7 +29,6 @@ const webpackConfig = merge(core,{
         // new webpack.optimize.CommonsChunkPlugin('app','app.js'),
         new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.optimize.DedupePlugin(),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
@@ -37,4 +36,3 @@ const webpackConfig = merge(core,{
         })
     ],
 });
-module.exports = webpackConfig;

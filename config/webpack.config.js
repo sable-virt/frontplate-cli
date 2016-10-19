@@ -6,7 +6,7 @@ const core = require("./webpack.core");
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
  */
-const webpackConfig = merge(core, {
+module.exports = merge(core, {
     devtool: '#source-map',
     module: {
         loaders: [
@@ -29,4 +29,3 @@ const webpackConfig = merge(core, {
         })
     ]
 });
-module.exports = webpackConfig;

@@ -1,9 +1,7 @@
 'use strict';
-const core = require('./core.config');
-
 module.exports = {
     src: 'src/sass/**/*.scss',  // 読み込むscss
-    dest: core.basePath + '/assets/css',  // 出力先
+    dest: FRP_DEST + '/assets/css',  // 出力先
     outputStyle: 'compact',
     sourceMap: true,
     plugins: [  // postcssプラグイン
@@ -20,7 +18,7 @@ module.exports = {
         verbose: false,
         clean: true,
         params: {},
-        css: '../public/assets/css/style.css',
+        css: '../' + FRP_DEST + '/assets/css/style.css',
         // script: '../public/assets/js/app.js',
     }
-};
+}
