@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(production) {
-    global.FRP_DEST = 'public';
+    global.FRP_DEST = global.FRP_DEST || 'public';
     return {
         clean: { src: FRP_DEST },
         html: require('./config/html.config'),
