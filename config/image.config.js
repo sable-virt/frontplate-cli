@@ -1,14 +1,14 @@
 'use strict';
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
+const imageminJpeg = require('imagemin-jpegoptim');
+const imageminPng = require('imagemin-pngquant');
 
 module.exports = {
     src: 'src/images/**/*.{gif,jpg,png}',  // 読み込むイメージ
     dest: FRP_DEST + '/assets/images',        // 出力先
     options: {
         plugins: [  // 圧縮プラグイン
-            imageminMozjpeg({quality: 90}),
-            imageminPngquant({quality: '80-90'})
+            imageminJpeg({max: 95}),
+            imageminPng({quality: '80-90'})
         ]
     }
 };

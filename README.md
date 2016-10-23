@@ -1,6 +1,6 @@
 # frontplate-cli
 
-CLI for Front-end developers.
+CLI for Front-end developers. (Inspired by angular-cli)
 
 ## Feature
 
