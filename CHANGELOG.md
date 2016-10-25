@@ -1,3 +1,13 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/frontainer/frontplate-cli/compare/v1.2.0...v1.2.1) (2016-10-25)
+
+
+### fix
+
+* imagemin-imozjpegをimagemin-jpegoptimに変更 ([86e69d72103926c90f43286d6eef21045c791c9c](https://github.com/frontainer/frontplate-cli/commit/86e69d72103926c90f43286d6eef21045c791c9c))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/frontainer/frontplate-cli/compare/v1.1.5...v1.2.0) (2016-10-19)
 
