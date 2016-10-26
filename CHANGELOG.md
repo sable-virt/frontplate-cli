@@ -1,3 +1,14 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/frontainer/frontplate-cli/compare/v1.2.2...v1.2.3) (2016-10-26)
+
+
+### add
+
+* frp initしたタイミングでconfigで使われているパッケージをローカルインストールするように ([348391067a045d06ac82dec0949c94fdc33449a5](https://github.com/frontainer/frontplate-cli/commit/348391067a045d06ac82dec0949c94fdc33449a5))
+* packageを指定したnpm installが実行できるように ([772077f5778b6b0c56623f58549090b18b00ef7b](https://github.com/frontainer/frontplate-cli/commit/772077f5778b6b0c56623f58549090b18b00ef7b))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/frontainer/frontplate-cli/compare/v1.2.1...v1.2.2) (2016-10-25)
 
