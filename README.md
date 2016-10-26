@@ -67,7 +67,7 @@ options
 frp task <TASK_NAME> [options]
 ```
 
-TASK_NAME(clean|copy|html|image|script|server|sprite|style|test)
+TASK_NAME(clean|copy|html|script|server|sprite|style|test)
 
 options
 
@@ -90,7 +90,6 @@ frp.config.js - テンプレートの全体の設定ファイル。出力先や�
 /config - 設定用フォルダ
   ┣ copy.config.js
   ┣ html.config.js
-  ┣ image.config.js
   ┣ server.config.js
   ┣ sprite.config.js
   ┣ style.config.js

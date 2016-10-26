@@ -59,7 +59,6 @@ describe('install', function () {
                     src: 'public'
                 },
                 html: require('../config/html.config'),
-                image: require('../config/image.config'),
                 style: require('../config/style.config'),
                 script: require('../config/webpack.config'),
                 server: require('../config/server.config'),
@@ -72,7 +71,6 @@ describe('install', function () {
                 src: 'public'
             },
             html: require('../config/html.config'),
-            image: require('../config/image.config'),
             style: require('../config/style.config.production'),
             script: require('../config/webpack.config.production'),
             server: require('../config/server.config'),
