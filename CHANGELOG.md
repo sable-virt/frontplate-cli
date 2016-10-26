@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/frontainer/frontplate-cli/compare/v1.2.3...v1.3.0) (2016-10-26)
+
+
+### breaking
+
+* 画像圧縮タスクが環境依存が激しいため削除 ([a87885a86579e8e49e45ec9e354323aef1823beb](https://github.com/frontainer/frontplate-cli/commit/a87885a86579e8e49e45ec9e354323aef1823beb))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/frontainer/frontplate-cli/compare/v1.2.2...v1.2.3) (2016-10-26)
 
