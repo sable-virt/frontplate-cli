@@ -54,7 +54,7 @@ describe('install', function () {
         assert.deepEqual(util.flatten(util.flatten([['a', ['b']], ['c']])), ['a', 'b', 'c']);
     });
     it('getConfig', () => {
-        assert.deepEqual(util.getConfig({}),merge(require('../frp.config')(),{
+        assert.deepEqual(util.getConfig({}),{
                 clean: {
                     src: 'public'
                 },
@@ -65,8 +65,8 @@ describe('install', function () {
                 copy: require('../config/copy.config'),
                 sprite: require('../config/sprite.config'),
                 test: require('../config/test.conf')
-            }));
-        assert.deepEqual(util.getConfig({production:true}),merge(require('../frp.config')({production:true}),{
+            });
+        assert.deepEqual(util.getConfig({production:true}),{
             clean: {
                 src: 'public'
             },
@@ -77,6 +77,6 @@ describe('install', function () {
             copy: require('../config/copy.config'),
             sprite: require('../config/sprite.config'),
             test: require('../config/test.conf')
-        }));
+        });
     });
 });
