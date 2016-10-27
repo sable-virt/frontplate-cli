@@ -1,3 +1,14 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/frontainer/frontplate-cli/compare/v1.4.0...v1.5.0) (2016-10-27)
+
+
+### breaking
+
+* cleanタスクの設定もconfig外部ファイル化 ([035bbe3abc587033160ef15f166e1d556ca2bd76](https://github.com/frontainer/frontplate-cli/commit/035bbe3abc587033160ef15f166e1d556ca2bd76))
+* frp initの仕様変更 - config全部展開ではなくfrp.config.jsのテンプレとlint設定ファイルだけを出力するように ([35589edfebded64d7709b5b0cbcb2c56662684a1](https://github.com/frontainer/frontplate-cli/commit/35589edfebded64d7709b5b0cbcb2c56662684a1))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/frontainer/frontplate-cli/compare/v1.3.1...v1.4.0) (2016-10-27)
 
