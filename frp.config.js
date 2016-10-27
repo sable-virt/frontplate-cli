@@ -2,7 +2,7 @@
 module.exports = function(production) {
     global.FRP_DEST = global.FRP_DEST || 'public';
     return {
-        clean: { src: FRP_DEST },
+        clean: require('./config/clean.config'),
         html: require('./config/html.config'),
         style: production ? require('./config/style.config.production') : require('./config/style.config'),
         script: production ? require('./config/webpack.config.production') : require('./config/webpack.config'),
