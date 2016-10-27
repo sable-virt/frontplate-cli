@@ -1,3 +1,19 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/frontainer/frontplate-cli/compare/v1.3.1...v1.4.0) (2016-10-27)
+
+
+### breaking
+
+* chrom-launcherからphantomjs-launcherに変更 ([5eb027b5c6ca8639965f48176d794a7a36a0da9e](https://github.com/frontainer/frontplate-cli/commit/5eb027b5c6ca8639965f48176d794a7a36a0da9e))
+* test関連の設定ファイルを通常のオブジェクトに変更 ([c94a559bc000b7d2b4f7fc94ec2a27899c0f6315](https://github.com/frontainer/frontplate-cli/commit/c94a559bc000b7d2b4f7fc94ec2a27899c0f6315))
+
+### fix
+
+* indentと0 unitは軽微なためsass lintしない ([c5d2806c9cb5f25a282e23174f37494dea67855b](https://github.com/frontainer/frontplate-cli/commit/c5d2806c9cb5f25a282e23174f37494dea67855b))
+* svgを多用するとwarningが出るのでデフォルトのattr-lowercaseをオフに ([7d1fcb317f462cb5e600c9e4c8cf7d5cf31392ef](https://github.com/frontainer/frontplate-cli/commit/7d1fcb317f462cb5e600c9e4c8cf7d5cf31392ef))
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/frontainer/frontplate-cli/compare/v1.3.0...v1.3.1) (2016-10-27)
 
