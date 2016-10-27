@@ -56,10 +56,10 @@ rules:
     - 0
     - style: lowercase
   indentation:
-    - 1
+    - 0
     - size: 2
   leading-zero:
-    - 1
+    - 0
     - include: false
   mixin-name-format:
     - 1
