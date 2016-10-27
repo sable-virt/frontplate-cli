@@ -1,3 +1,18 @@
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/frontainer/frontplate-cli/compare/v1.5.0...v1.6.0) (2016-10-27)
+
+
+### breaking
+
+* configの継承は行わず、第２階層以降は置き換えるよう変更 ([219f9f3e08859af1e8fb6dec69bdfe6d90622213](https://github.com/frontainer/frontplate-cli/commit/219f9f3e08859af1e8fb6dec69bdfe6d90622213))
+
+### fix
+
+* sprite config ([20f2a5d509a0e0ae50f49de6e863b11ffeee57b1](https://github.com/frontainer/frontplate-cli/commit/20f2a5d509a0e0ae50f49de6e863b11ffeee57b1))
+* オプションがきちんと継承できていない ([05ce7be04aee852631f2ec1e658d8c58d284f6ed](https://github.com/frontainer/frontplate-cli/commit/05ce7be04aee852631f2ec1e658d8c58d284f6ed))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/frontainer/frontplate-cli/compare/v1.4.0...v1.5.0) (2016-10-27)
 
