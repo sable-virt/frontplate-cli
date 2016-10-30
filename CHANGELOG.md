@@ -1,3 +1,22 @@
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/frontainer/frontplate-cli/compare/v1.6.0...v1.7.0) (2016-10-30)
+
+
+### breaking
+
+* closure-cmpiler-jsはAngular他ライブラリとの互換性が今のところ不安定なのでUglifyに差し戻し ([3b06bf1aa584fd9f549c14d0bfd7d67375505d0f](https://github.com/frontainer/frontplate-cli/commit/3b06bf1aa584fd9f549c14d0bfd7d67375505d0f))
+
+### fix
+
+* webpack2に合わせてmodule.loadersからmodule.rulesに修正 ([2ed03906b6ecf1d76dff377ed0e020dce7afdf63](https://github.com/frontainer/frontplate-cli/commit/2ed03906b6ecf1d76dff377ed0e020dce7afdf63))
+* スタイルガイド生成によってsass変更時もブラウザフル更新されるのを修正 ([3e8eb48dae25059bb6e8efd4b1845cf1e360cd3e](https://github.com/frontainer/frontplate-cli/commit/3e8eb48dae25059bb6e8efd4b1845cf1e360cd3e))
+
+### update
+
+* eslint package ([81c02b01cc73d5dbbf472a4da02d1339c8071d54](https://github.com/frontainer/frontplate-cli/commit/81c02b01cc73d5dbbf472a4da02d1339c8071d54))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/frontainer/frontplate-cli/compare/v1.5.0...v1.6.0) (2016-10-27)
 
