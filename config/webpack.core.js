@@ -16,12 +16,11 @@ module.exports = {
     },
     resolve: { modules: [ './src/js'] },
     module: {
-        loaders: [
+        rules: [
             {test: /\.js$/, exclude: /node_modules/, loader: 'eslint', enforce: 'pre'},
             {test: /\.html$/, loader: 'html'},
             {test: /\.json$/, loader: 'json'},
-        ],
-        exprContextCritical: false
+        ]
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({

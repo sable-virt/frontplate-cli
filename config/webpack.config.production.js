@@ -9,12 +9,8 @@ const core = require("./webpack.core");
  */
 module.exports = merge(core, {
     module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'babel'
-            }
+        rules: [
+            { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
         ]
     },
     plugins: [
