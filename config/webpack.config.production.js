@@ -1,7 +1,6 @@
 'use strict';
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const ClosureCompiler = require.main.require('google-closure-compiler-js').webpack;
 const core = require("./webpack.core");
 /**
  * webpack config for production
@@ -10,19 +9,22 @@ const core = require("./webpack.core");
 module.exports = merge(core, {
     module: {
         rules: [
-            { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
+            {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
         ]
     },
     plugins: [
-        new ClosureCompiler({
-            options: {
-                languageIn: 'ECMASCRIPT6',
-                languageOut: 'ECMASCRIPT5',
-                compilationLevel: 'ADVANCED',
-                warningLevel: 'QUIET',
+        new webpack.optimize.UglifyJsPlugin({
+            beautify: false,
+            mangle: {
+                screw_ie8: true,
+                keep_fnames: true
             },
+            compress: {
+                warnings: false,
+                screw_ie8: true
+            },
+            comments: false
         }),
-        // new webpack.optimize.CommonsChunkPlugin('app','app.js'),
         new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin({
