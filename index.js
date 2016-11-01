@@ -13,7 +13,7 @@ let argv = process.argv;
 argv[1] = localScript;
 argv.push('-c',localConf);
 let env = process.env;
-env.NODE_PATH = path.join(__dirname,'node_modules');
+env.NODE_PATH = path.join(__dirname,'node_modules') + path.delimiter + path.join(process.cwd(),'node_modules');
 spawn(argv.shift(), argv, {
     cwd: process.cwd(),
     env: env,
