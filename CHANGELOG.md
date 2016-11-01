@@ -1,3 +1,13 @@
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/frontainer/frontplate-cli/compare/v1.7.0...v1.7.1) (2016-11-01)
+
+
+### fix
+
+* ローカルに導入したeslintプラグインが参照できない ([9a9c1bc92584ff265f25537160658ca7976ab359](https://github.com/frontainer/frontplate-cli/commit/9a9c1bc92584ff265f25537160658ca7976ab359))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/frontainer/frontplate-cli/compare/v1.6.0...v1.7.0) (2016-10-30)
 
