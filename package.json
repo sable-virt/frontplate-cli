@@ -52,6 +52,7 @@
     "glob-base": "^0.3.0",
     "html-loader": "^0.4.4",
     "htmlhint": "^0.9.13",
+    "inquirer": "^1.2.2",
     "jasmine": "^2.5.2",
     "json-loader": "^0.5.4",
     "json2css": "^6.1.0",
