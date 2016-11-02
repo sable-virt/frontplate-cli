@@ -1,5 +1,6 @@
 'use strict';
 module.exports = function(production) {
+    global.FRP_SRC = global.FRP_SRC || 'src';
     global.FRP_DEST = global.FRP_DEST || 'public';
     return {
         clean: require('./config/clean.config'),

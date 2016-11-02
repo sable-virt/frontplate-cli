@@ -6,7 +6,7 @@ const entries = require("webpack-entries");
  * url: https://webpack.github.io/docs/configuration.html
  */
 module.exports = {
-    entry: entries('./src/js/!(_*|*spec).js',true),
+    entry: entries(`./${FRP_SRC}/js/!(_*|*spec).js`,true),
     output: {
         path: FRP_DEST + '/assets/js',
         publicPath: '/assets',
@@ -14,7 +14,7 @@ module.exports = {
         sourceMapFilename: 'maps/[name].map',
         jsonpFunction: 'fr'
     },
-    resolve: { modules: [ './src/js'] },
+    resolve: { modules: [ `./${FRP_SRC}/js`] },
     module: {
         rules: [
             {test: /\.js$/, exclude: /node_modules/, loader: 'eslint', enforce: 'pre'},
