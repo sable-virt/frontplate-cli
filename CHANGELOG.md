@@ -1,3 +1,26 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/frontainer/frontplate-cli/compare/v1.7.1...v2.0.0) (2016-11-03)
+
+
+### breaking
+
+* frp initコマンドは影響が大きくアップデートを阻害するので削除 ([3f4fe2f6bd70beebe5ac65744ce27181f29d1049](https://github.com/frontainer/frontplate-cli/commit/3f4fe2f6bd70beebe5ac65744ce27181f29d1049))
+
+### fix
+
+* `frp build` cannot automatically load local .eslintrc #8 ([5d91a6fd5d01cbdb91228cf42709f2973c5d5a2d](https://github.com/frontainer/frontplate-cli/commit/5d91a6fd5d01cbdb91228cf42709f2973c5d5a2d))
+
+### new
+
+* configからビルドソースのディレクトリを指定できるように ([d63c567955fbdf3734041268b91ea0afa8971434](https://github.com/frontainer/frontplate-cli/commit/d63c567955fbdf3734041268b91ea0afa8971434))
+* frp単体で対話式にコマンド実行できる機能 ([d39c9012648a3bf1bda6d6b5fc0611ffe66a966d](https://github.com/frontainer/frontplate-cli/commit/d39c9012648a3bf1bda6d6b5fc0611ffe66a966d))
+
+### refactor
+
+* フォルダを整理してCLIヘルパーをcommanderからyargsに乗せ換え ([62fa05dac809c3968a0b766ddebc1561263bc995](https://github.com/frontainer/frontplate-cli/commit/62fa05dac809c3968a0b766ddebc1561263bc995))
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://github.com/frontainer/frontplate-cli/compare/v1.7.0...v1.7.1) (2016-11-01)
 
