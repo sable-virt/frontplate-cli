@@ -3,14 +3,12 @@ const webpack = require("webpack");
 const entries = require("webpack-entries");
 const path = require("path");
 const util = require("../lib/util/util");
+const localConfig = path.join(process.cwd(),'.eslintrc');
+const globalConfig = path.join(__dirname,'/../.eslintrc');
 /**
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
  */
-
-const localConfig = path.join(process.cwd(),'.eslintrc');
-const globalConfig = path.join(__dirname,'/../.eslintrc');
-
 module.exports = {
     entry: entries(`./${FRP_SRC}/js/!(_*|*spec).js`,true),
     output: {
