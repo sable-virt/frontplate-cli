@@ -3,17 +3,21 @@
 const path = require('path');
 const spawn = require('cross-spawn');
 const updateNotifier = require('update-notifier');
-const util = require('./lib/util');
 const pkg = require('./package.json');
-updateNotifier({pkg}).notify();
+updateNotifier({
+    pkg: pkg,
+    defer: false
+}).notify();
 
 const localScript = path.join(__dirname, 'lib/frp.js');
-const localConf = util.getLocalConfig();
 let argv = process.argv;
-argv[1] = localScript;
-argv.push('-c',localConf);
 let env = process.env;
-env.NODE_PATH = path.join(__dirname,'node_modules') + path.delimiter + path.join(process.cwd(),'node_modules');
+let modulePath = [
+    path.join(__dirname,'node_modules'),
+    path.join(process.cwd(),'node_modules')
+];
+argv[1] = localScript;
+env.NODE_PATH = modulePath.join(path.delimiter);
 spawn(argv.shift(), argv, {
     cwd: process.cwd(),
     env: env,

@@ -2,7 +2,7 @@
 const assert = require('power-assert');
 const fs = require('fs');
 const rimraf = require('rimraf');
-const timer = require('../lib/timer');
+const timer = require('../lib/util/timer');
 describe('timer', function() {
     beforeEach(() => {
         timer.reset();

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    src: 'src/view/**/*.ejs',   // 読み込むビューファイル
+    src: `${FRP_SRC}/view/**/*.ejs`,   // 読み込むビューファイル
     dest: FRP_DEST,        // 出力先
     params: {                   // ビューで使うグローバル変数
         title: 'title'
@@ -9,7 +9,7 @@ module.exports = {
     pages: [
         // {
         //     name: 'filename',    // 出力するファイル名
-        //     src: 'src/view/tmpl/_template.ejs',  // テンプレート
+        //     src: `${FRP_SRC}/view/tmpl/_template.ejs`,  // テンプレート
         //     params: {       // ページに渡す変数
         //         title: 'page title'
         //     }

@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('power-assert');
-const install = require('../lib/install');
+const install = require('../lib/util/install');
 describe('install', function() {
     this.timeout(1000000);
     it('install',(done) => {

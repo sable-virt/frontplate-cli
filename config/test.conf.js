@@ -14,13 +14,13 @@ module.exports = {
 
     // list of files / patterns to load in the browser
     files: [
-        'src/js/**/*spec.js'
+        `${FRP_SRC}/js/**/*spec.js`
     ],
     preprocessors: {
         '**/*spec.js': ['webpack','babel']
     },
     webpack: {
-        resolve: { modules: [ './src/js'] },
+        resolve: { modules: [ `./${FRP_SRC}/js`] },
     },
     webpackMiddleware: {
         quiet: true,

@@ -2,7 +2,7 @@
 const assert = require('power-assert');
 const fs = require('fs');
 const rimraf = require('rimraf');
-const util = require('../lib/util');
+const util = require('../lib/util/util');
 const merge = require('webpack-merge');
 describe('install', function () {
     beforeEach(() => {
