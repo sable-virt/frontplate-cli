@@ -2,7 +2,7 @@
 const webpack = require("webpack");
 const entries = require("webpack-entries");
 const path = require("path");
-const util = require("../lib/util");
+const util = require("../lib/util/util");
 /**
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
