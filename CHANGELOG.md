@@ -1,3 +1,14 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/frontainer/frontplate-cli/compare/v2.0.0...v2.0.1) (2016-11-04)
+
+
+### fix
+
+* babel-eslintは不要になっているので削除 ([01332fc0819a04dde87193f36f8562a10975835e](https://github.com/frontainer/frontplate-cli/commit/01332fc0819a04dde87193f36f8562a10975835e))
+* frpコマンドの対話でcreateできない ([002c702bf93ee7fe2bc4d8e2890c2186246a68ed](https://github.com/frontainer/frontplate-cli/commit/002c702bf93ee7fe2bc4d8e2890c2186246a68ed))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/frontainer/frontplate-cli/compare/v1.7.1...v2.0.0) (2016-11-03)
 
