@@ -1,3 +1,13 @@
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/frontainer/frontplate-cli/compare/v2.0.1...v2.0.2) (2016-11-07)
+
+
+### fix
+
+* eslintの設定をES6モジュールをサポートするように  ([4c632727f030af0f6dedc7f9252e9834a5828979](https://github.com/frontainer/frontplate-cli/commit/4c632727f030af0f6dedc7f9252e9834a5828979))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/frontainer/frontplate-cli/compare/v2.0.0...v2.0.1) (2016-11-04)
 
