@@ -28,7 +28,7 @@ module.exports = {
         "spec-char-escape": true,
         "id-unique": true,
         "src-not-empty": true,
-        "head-script-disabled": true,
+        "head-script-disabled": false,
         "img-alt-require": true,
         "doctype-html5": true,
         "id-class-value": false,
