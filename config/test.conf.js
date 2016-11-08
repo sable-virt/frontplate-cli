@@ -4,7 +4,7 @@
  * url: https://karma-runner.github.io/1.0/config/configuration-file.html
  */
 
-
+const webpackConfig = require('./webpack.config');
 module.exports = {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '.',
@@ -19,9 +19,7 @@ module.exports = {
     preprocessors: {
         '**/*spec.js': ['webpack','babel']
     },
-    webpack: {
-        resolve: { modules: [ `./${FRP_SRC}/js`] },
-    },
+    webpack: webpackConfig,
     webpackMiddleware: {
         quiet: true,
         stats: 'errors-only'
