@@ -1,3 +1,15 @@
+<a name="2.0.3"></a>
+## [2.0.3](https://github.com/frontainer/frontplate-cli/compare/v2.0.2...v2.0.3) (2016-11-08)
+
+
+### fix
+
+* CLIで動的に生成していたscriptのモジュール読み込み先を設定ファイルに記述することで統一 ([402ce1f1142a1aff88914bc7b67617835e53d2aa](https://github.com/frontainer/frontplate-cli/commit/402ce1f1142a1aff88914bc7b67617835e53d2aa))
+* GAなどのスクリプトを頻繁に入れることがあるため、"head-script-disabled"をチェックしないように ([f4b41c09469148c664c194bb3b77cefc280177a0](https://github.com/frontainer/frontplate-cli/commit/f4b41c09469148c664c194bb3b77cefc280177a0))
+* ユニットテストでwebpackの設定が反映されずカスタマイズするとビルドできなくなる ([5c3f94001866427f7231146f1401972f1cebb7e7](https://github.com/frontainer/frontplate-cli/commit/5c3f94001866427f7231146f1401972f1cebb7e7))
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/frontainer/frontplate-cli/compare/v2.0.1...v2.0.2) (2016-11-07)
 
