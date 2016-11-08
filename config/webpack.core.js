@@ -18,7 +18,21 @@ module.exports = {
         sourceMapFilename: 'maps/[name].map',
         jsonpFunction: 'fr'
     },
-    resolve: { modules: [ `./${FRP_SRC}/js`] },
+    resolve: {
+        modules: [
+            `${FRP_SRC}`,
+            path.join(process.cwd(), 'node_modules'),
+            path.join(__dirname, '../node_modules'),
+            "node_modules"
+        ],
+    },
+    resolveLoader: {
+        modules: [
+            path.join(process.cwd(),'node_modules'),
+            path.join(__dirname, '../node_modules'),
+            "node_modules"
+        ]
+    },
     module: {
         rules: [
             {test: /\.js$/, exclude: /node_modules/, loader: 'eslint', enforce: 'pre'},
