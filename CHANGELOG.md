@@ -1,3 +1,13 @@
+<a name="2.0.4"></a>
+## [2.0.4](https://github.com/frontainer/frontplate-cli/compare/v2.0.3...v2.0.4) (2016-11-09)
+
+
+### fix
+
+* webpack-configでresolve,resolveLoaderを変更している場合にjsエラーが発生する可能性がある ([cd8d4fa0c1df1c4d9da8139bf561b33ef78ee5d4](https://github.com/frontainer/frontplate-cli/commit/cd8d4fa0c1df1c4d9da8139bf561b33ef78ee5d4))
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/frontainer/frontplate-cli/compare/v2.0.2...v2.0.3) (2016-11-08)
 
