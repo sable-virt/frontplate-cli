@@ -4,6 +4,7 @@
 
 ### fix
 
+* scssがエラーになった際にエラーの内容が表示されない ([1924494b0fc059e7505cbebe4ba3c39077181d72](https://github.com/frontainer/frontplate-cli/commit/1924494b0fc059e7505cbebe4ba3c39077181d72))
 * webpack-configでresolve,resolveLoaderを変更している場合にjsエラーが発生する可能性がある ([cd8d4fa0c1df1c4d9da8139bf561b33ef78ee5d4](https://github.com/frontainer/frontplate-cli/commit/cd8d4fa0c1df1c4d9da8139bf561b33ef78ee5d4))
 
 
