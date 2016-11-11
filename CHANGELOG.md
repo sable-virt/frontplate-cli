@@ -1,3 +1,13 @@
+<a name="2.0.5"></a>
+## [2.0.5](https://github.com/frontainer/frontplate-cli/compare/v2.0.4...v2.0.5) (2016-11-11)
+
+
+### add
+
+* sassのimportでの'~'記法をサポート ([4be0f708631a609cedb4b9bd3bdcda924adbcac7](https://github.com/frontainer/frontplate-cli/commit/4be0f708631a609cedb4b9bd3bdcda924adbcac7))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/frontainer/frontplate-cli/compare/v2.0.3...v2.0.4) (2016-11-09)
 
