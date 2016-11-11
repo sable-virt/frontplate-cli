@@ -1,3 +1,13 @@
+<a name="2.0.6"></a>
+## [2.0.6](https://github.com/frontainer/frontplate-cli/compare/v2.0.5...v2.0.6) (2016-11-11)
+
+
+### fix
+
+* frp create コマンドでpresetが効かない ([c8f3fc6084b8ac5b00c97b2d372829be1f71b36b](https://github.com/frontainer/frontplate-cli/commit/c8f3fc6084b8ac5b00c97b2d372829be1f71b36b))
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/frontainer/frontplate-cli/compare/v2.0.4...v2.0.5) (2016-11-11)
 
