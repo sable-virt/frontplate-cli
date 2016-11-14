@@ -1,3 +1,14 @@
+<a name="2.0.7"></a>
+## [2.0.7](https://github.com/frontainer/frontplate-cli/compare/v2.0.6...v2.0.7) (2016-11-14)
+
+
+### fix
+
+* src/jsディレクトリにパスが通っていなかったのを修正 ([f78783a2a385d35a8ac7a2ed8487a504ee5615d6](https://github.com/frontainer/frontplate-cli/commit/f78783a2a385d35a8ac7a2ed8487a504ee5615d6))
+* webpack2.1.0-beta.26でloader指定で-loaderを省略するとbabelコンパイルできない ([58bd92d9506caadd3179a7c27b1934852259115c](https://github.com/frontainer/frontplate-cli/commit/58bd92d9506caadd3179a7c27b1934852259115c))
+
+
+
 <a name="2.0.6"></a>
 ## [2.0.6](https://github.com/frontainer/frontplate-cli/compare/v2.0.5...v2.0.6) (2016-11-11)
 
