@@ -35,9 +35,9 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /\.js$/, exclude: /node_modules/, loader: 'eslint', enforce: 'pre'},
-            {test: /\.html$/, loader: 'html'},
-            {test: /\.json$/, loader: 'json'},
+            {test: /\.js$/, exclude: /node_modules/, loader: 'eslint-loader', enforce: 'pre'},
+            {test: /\.html$/, loader: 'html-loader'},
+            {test: /\.json$/, loader: 'json-loader'},
         ]
     },
     plugins: [

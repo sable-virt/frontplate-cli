@@ -10,7 +10,7 @@ module.exports = merge(core, {
     devtool: '#source-map',
     module: {
         rules: [
-            {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
+            {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'}
         ]
     },
     plugins: [
