@@ -13,6 +13,7 @@ module.exports = {
             ]
         })
     ],
+    noGuide: false,
     styleguide: {
         title: 'StyleGuide',
         verbose: false,
