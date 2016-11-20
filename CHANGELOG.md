@@ -1,3 +1,17 @@
+<a name="2.0.8"></a>
+## [2.0.8](https://github.com/frontainer/frontplate-cli/compare/v2.0.7...v2.0.8) (2016-11-20)
+
+
+### fix
+
+* ejsのデフォルト参照をFRP_SRC直下から参照するように ([51f68e92e5397c7c7230bc1cc033e29a5effddc1](https://github.com/frontainer/frontplate-cli/commit/51f68e92e5397c7c7230bc1cc033e29a5effddc1))
+
+### new
+
+* スタイルガイドを生成しないオプション ([1699cd85eb227b8e78226abc35bb2f6646edca4a](https://github.com/frontainer/frontplate-cli/commit/1699cd85eb227b8e78226abc35bb2f6646edca4a))
+
+
+
 <a name="2.0.7"></a>
 ## [2.0.7](https://github.com/frontainer/frontplate-cli/compare/v2.0.6...v2.0.7) (2016-11-14)
 
