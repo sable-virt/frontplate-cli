@@ -1,3 +1,13 @@
+<a name="2.0.9"></a>
+## [2.0.9](https://github.com/frontainer/frontplate-cli/compare/v2.0.8...v2.0.9) (2016-11-21)
+
+
+### new
+
+* cleanタスクのsrcがnull/falseの場合は処理をスキップできるように ([ccf2a49547ad772d074366e880e70735e6c7f859](https://github.com/frontainer/frontplate-cli/commit/ccf2a49547ad772d074366e880e70735e6c7f859))
+
+
+
 <a name="2.0.8"></a>
 ## [2.0.8](https://github.com/frontainer/frontplate-cli/compare/v2.0.7...v2.0.8) (2016-11-20)
 
