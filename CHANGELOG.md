@@ -1,3 +1,15 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/frontainer/frontplate-cli/compare/v2.0.9...v2.1.0) (2016-11-23)
+
+
+### fix
+
+* copyタスク監視実行時にブラウザが更新されないことがある ([31bf8246e7eec936a80c1e3468071177fad92bad](https://github.com/frontainer/frontplate-cli/commit/31bf8246e7eec936a80c1e3468071177fad92bad))
+* webpackのpublicPathのデフォルト間違い ([28e92c0422c98e5dc9addaa13acdcea48029c2df](https://github.com/frontainer/frontplate-cli/commit/28e92c0422c98e5dc9addaa13acdcea48029c2df))
+* デフォルトのejs監視対象をsvg,htmlも含めるように ([58aaac218367a9780cbb93cc5af32f33e3eb3b51](https://github.com/frontainer/frontplate-cli/commit/58aaac218367a9780cbb93cc5af32f33e3eb3b51))
+
+
+
 <a name="2.0.9"></a>
 ## [2.0.9](https://github.com/frontainer/frontplate-cli/compare/v2.0.8...v2.0.9) (2016-11-21)
 
