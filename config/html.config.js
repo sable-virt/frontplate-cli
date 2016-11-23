@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    src: `${FRP_SRC}/**/*.ejs`,   // 読み込むビューファイル
+    src: `${FRP_SRC}/**/*.{ejs,svg,html}`,   // 読み込むビューファイル
     dest: FRP_DEST,        // 出力先
     params: {                   // ビューで使うグローバル変数
         title: 'title'
