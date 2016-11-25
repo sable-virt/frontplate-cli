@@ -1,3 +1,13 @@
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/frontainer/frontplate-cli/compare/v2.1.1...v2.1.2) (2016-11-25)
+
+
+### fix
+
+* processの終了検知がserveタスク以外でも実行されてしまう ([00751fefdc1106a1101216caf20b09618237ac47](https://github.com/frontainer/frontplate-cli/commit/00751fefdc1106a1101216caf20b09618237ac47))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/frontainer/frontplate-cli/compare/v2.1.0...v2.1.1) (2016-11-25)
 
