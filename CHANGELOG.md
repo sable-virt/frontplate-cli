@@ -1,3 +1,14 @@
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/frontainer/frontplate-cli/compare/v2.1.0...v2.1.1) (2016-11-25)
+
+
+### fix
+
+* karmaのconfigを最新版の設定ファイルに更新 ([7be8ef83f1bd3b9e95af3af8e5207d76ba1226fa](https://github.com/frontainer/frontplate-cli/commit/7be8ef83f1bd3b9e95af3af8e5207d76ba1226fa))
+* プロセスが正しく終了しないことがある ([1fe135e71dbaedc6ea30334c1cabbf05d3cee0b9](https://github.com/frontainer/frontplate-cli/commit/1fe135e71dbaedc6ea30334c1cabbf05d3cee0b9))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/frontainer/frontplate-cli/compare/v2.0.9...v2.1.0) (2016-11-23)
 
