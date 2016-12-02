@@ -1,0 +1,36 @@
+<% items.forEach(function(item) {%>$<%= filename %>-<%= item.name %>: (
+    x: <%= item.x %>,
+    y: <%= item.y %>,
+    width: <%= item.width %>,
+    height: <%= item.height %>,
+    total_width: <%= item.total_width %>,
+    total_height: <%= item.total_height %>,
+    image: "<%= item.image %>",
+    offset_x: <%= item.offset_x %>,
+    offset_y: <%= item.offset_y %>
+);<% }); %>
+<% if (config.mixin !== false) {%>
+@mixin sprite($variable,$scale:1) {
+    $image: map_get($variable,image);
+    $offset_x: map_get($variable,offset_x) * $scale;
+    $offset_y: map_get($variable,offset_y) * $scale;
+    $width: map_get($variable,width) * $scale;
+    $height: map_get($variable,height) * $scale;
+    $total_width: map_get($variable,total_width) * $scale;
+    $total_height: map_get($variable,total_height) * $scale;
+    background-image: url($image);
+    background-position: #{$offset_x}px #{$offset_y}px;
+    background-size: #{$total_width}px #{$total_height}px;
+    width: #{$width}px;
+    height: #{$height}px;
+}
+<% } %>
+<% if (config.selector !== false) { var scale = config.scale || 1; %>
+.<%= filename %> {
+    display: inline-block;
+    background-repeat: no-repeat;
+    <% items.forEach(function(item) {%>
+    &.<%= filename %>-<%= item.name %>{
+        @include sprite($<%= filename %>-<%= item.name %>, <%= scale%>);
+    }<% }); %>
+}<% } %>
