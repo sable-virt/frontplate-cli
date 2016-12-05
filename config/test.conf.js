@@ -17,18 +17,12 @@ module.exports = {
         `${FRP_SRC}/js/**/*spec.js`
     ],
     preprocessors: {
-        '**/*spec.js': ['webpack','babel']
+        '**/*spec.js': ['webpack']
     },
     webpack: webpackConfig,
     webpackMiddleware: {
         quiet: true,
         stats: 'errors-only'
-    },
-    babelPreprocessor: {
-        options: {
-            presets: ['es2015'],
-            sourceMap: 'inline'
-        }
     },
     exclude: [],
     // test results reporter to use
