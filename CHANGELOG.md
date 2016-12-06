@@ -1,3 +1,24 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/frontainer/frontplate-cli/compare/v2.1.2...v3.0.0) (2016-12-06)
+
+
+### breaking
+
+* 複数指定のglobで削除できるようにrimrafからdelに乗り換え ([e787d55e5bf6262d5fe7ef24a0415c663b9605d8](https://github.com/frontainer/frontplate-cli/commit/e787d55e5bf6262d5fe7ef24a0415c663b9605d8))
+
+### fix
+
+* babelコンパイルをすべてwebpackに集約 ([ca3c63d9c48de0b0f5b9673ba78db20050c4369b](https://github.com/frontainer/frontplate-cli/commit/ca3c63d9c48de0b0f5b9673ba78db20050c4369b))
+* SASS3.3のmap_getなどがWarningになってしまう ([1459b8439279e9f105fae60ad4ca9e47f7ade6f1](https://github.com/frontainer/frontplate-cli/commit/1459b8439279e9f105fae60ad4ca9e47f7ade6f1))
+* watch時の監視対象が多くメモリ使用量が多い #15 ([e5078a3fd806d1a34e484bc4fdea15bc36755b03](https://github.com/frontainer/frontplate-cli/commit/e5078a3fd806d1a34e484bc4fdea15bc36755b03))
+* エラーメッセージを赤字表示に ([00f036c35d52991869d790873bf911a840ecddad](https://github.com/frontainer/frontplate-cli/commit/00f036c35d52991869d790873bf911a840ecddad))
+
+### new
+
+* Retina対応したSpriteを生成できるように #13 ([e89c3a8d975a74421c879753669f4d7322ced11e](https://github.com/frontainer/frontplate-cli/commit/e89c3a8d975a74421c879753669f4d7322ced11e))
+
+
+
 <a name="2.1.2"></a>
 ## [2.1.2](https://github.com/frontainer/frontplate-cli/compare/v2.1.1...v2.1.2) (2016-11-25)
 
