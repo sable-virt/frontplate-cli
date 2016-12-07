@@ -1,3 +1,13 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/frontainer/frontplate-cli/compare/v3.0.0...v3.1.0) (2016-12-07)
+
+
+### new
+
+* frp exe <SCRIPT_FILE>でローカルにあるスクリプトをfrpプラグインとして実行できる機能 ([10427a03e9e60822d9280e11557cea5b76b899c7](https://github.com/frontainer/frontplate-cli/commit/10427a03e9e60822d9280e11557cea5b76b899c7))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/frontainer/frontplate-cli/compare/v2.1.2...v3.0.0) (2016-12-06)
 
