@@ -1,3 +1,13 @@
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/frontainer/frontplate-cli/compare/v3.1.0...v3.1.1) (2016-12-09)
+
+
+### fix
+
+* ユニットテストのコンパイルエラー時のメッセージがわかりにくい #16 ([f545ea236854eeb586534c1910e0f263af3ce14b](https://github.com/frontainer/frontplate-cli/commit/f545ea236854eeb586534c1910e0f263af3ce14b))
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/frontainer/frontplate-cli/compare/v3.0.0...v3.1.0) (2016-12-07)
 
