@@ -21,7 +21,6 @@ module.exports = {
     },
     webpack: webpackConfig,
     webpackMiddleware: {
-        quiet: true,
         stats: 'errors-only'
     },
     exclude: [],
