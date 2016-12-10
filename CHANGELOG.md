@@ -1,3 +1,18 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/frontainer/frontplate-cli/compare/v3.1.1...v4.0.0) (2016-12-10)
+
+
+### add
+
+* `frp test` でユニットテストのみ実行できるコマンドを追加 ([0c259a9b6920b3a5342c2bc60ec435396bdd713f](https://github.com/frontainer/frontplate-cli/commit/0c259a9b6920b3a5342c2bc60ec435396bdd713f))
+* 対話式コマンドにもtestを追加 ([4cbf4c69fa5e8448803096810ad209e0a094533c](https://github.com/frontainer/frontplate-cli/commit/4cbf4c69fa5e8448803096810ad209e0a094533c))
+
+### breaking
+
+* `frp build` の実行タスクからテストを削除 => `frp test` コマンドに分離 ([d1c086ce74ffea7f97ad7cee0060e8c470d6d073](https://github.com/frontainer/frontplate-cli/commit/d1c086ce74ffea7f97ad7cee0060e8c470d6d073))
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://github.com/frontainer/frontplate-cli/compare/v3.1.0...v3.1.1) (2016-12-09)
 
