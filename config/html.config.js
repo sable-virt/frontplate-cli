@@ -20,7 +20,7 @@ module.exports = {
         "tagname-lowercase": true,
         "attr-lowercase": false,
         "attr-value-double-quotes": true,
-        "attr-value-not-empty": true,
+        "attr-value-not-empty": false,
         "attr-no-duplication": true,
         "doctype-first": false,
         "tag-pair": true,
