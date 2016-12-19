@@ -5,6 +5,7 @@ module.exports = {
     params: {                   // ビューで使うグローバル変数
         title: 'title'
     },
+    ext: '.html',        // 出力する際の拡張子
     // １つのテンプレートで複数作成するときに使用する
     pages: [
         // {
