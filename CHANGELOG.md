@@ -1,3 +1,26 @@
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/frontainer/frontplate-cli/compare/v4.0.0...v4.1.0) (2016-12-27)
+
+
+### fix
+
+* HTMLの属性でvalなしを許容 ([2b073dd674d3fdac9f30cea7c3882810f4f22b3c](https://github.com/frontainer/frontplate-cli/commit/2b073dd674d3fdac9f30cea7c3882810f4f22b3c))
+* sassのエラーメッセージが１行しか表示されない ([592ef1b4d615dfbdfbea060a83ddba43e12395ae](https://github.com/frontainer/frontplate-cli/commit/592ef1b4d615dfbdfbea060a83ddba43e12395ae))
+* typo https://github.com/frontainer/frontplate-cli/pull/18 ([f4d64cf6cbb3d8effcf5b268b96caf81f37fbd29](https://github.com/frontainer/frontplate-cli/commit/f4d64cf6cbb3d8effcf5b268b96caf81f37fbd29))
+* エラーが１行しか表示されない ([2cdb00a773c051774dea8b917387eb29a929e3aa](https://github.com/frontainer/frontplate-cli/commit/2cdb00a773c051774dea8b917387eb29a929e3aa))
+* ファイルサイズが250KBを超えたときのwebpackのwarningを非表示 ([5b1be1ee392d1597266ce03b692cf07d776e60c7](https://github.com/frontainer/frontplate-cli/commit/5b1be1ee392d1597266ce03b692cf07d776e60c7))
+* 未使用で呼び出しているパッケージを削除 ([d061b5fe07df9a741c2284c7b3bc6bfa10029ace](https://github.com/frontainer/frontplate-cli/commit/d061b5fe07df9a741c2284c7b3bc6bfa10029ace))
+
+### new
+
+* ejs出力時の拡張子を変更できるように  ([07fe02db2953221a0f1958b654c5cc6068f37aae](https://github.com/frontainer/frontplate-cli/commit/07fe02db2953221a0f1958b654c5cc6068f37aae))
+
+### refactor
+
+* インデントをスペース2に統一 ([f6aa3561fbceb9da54e466bd0e749ce88e7abf9a](https://github.com/frontainer/frontplate-cli/commit/f6aa3561fbceb9da54e466bd0e749ce88e7abf9a))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/frontainer/frontplate-cli/compare/v3.1.1...v4.0.0) (2016-12-10)
 
