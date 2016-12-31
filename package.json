@@ -71,9 +71,10 @@
     "spritesmith": "3.1.0",
     "update-notifier": "1.0.3",
     "webpack": "2.2.0-rc.2",
+    "webpack-build-notifier": "0.1.13",
     "webpack-entries": "1.0.0",
     "webpack-merge": "2.0.0",
-    "yargs": "6.5.0"
+    "yargs": "6.6.0"
   },
   "devDependencies": {
     "conventional-changelog-cli": "1.2.0",

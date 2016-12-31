@@ -5,6 +5,7 @@ const path = require("path");
 const util = require("../lib/util/util");
 const localConfig = path.join(process.cwd(), '.eslintrc');
 const globalConfig = path.join(__dirname, '/../.eslintrc');
+const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 /**
  * webpack config
  * url: https://webpack.github.io/docs/configuration.html
@@ -41,6 +42,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new WebpackBuildNotifierPlugin({
+      title: "frp task script",
+      suppressSuccess: true
+    }),
     new webpack.LoaderOptionsPlugin({
       options: {
         eslint: {
