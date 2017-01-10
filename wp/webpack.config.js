@@ -4,7 +4,6 @@ const webpack = require("webpack");
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Autoprefixer = require('autoprefixer');
 
@@ -14,17 +13,20 @@ const Autoprefixer = require('autoprefixer');
  */
 const DEST_PATH = 'public';
 module.exports = {
-  devtool: '#source-map',
-  entry: [
-    './src/js/main',
-    './src/sass/style.scss'
-  ],
+  devtool: '#inline-source-map', // source-mapにするとjsのが消えてしまう
+  entry: {
+    main: [
+      './src/js/main',
+      './src/sass/style.scss'
+    ]
+  },
   output: {
     path: path.resolve(DEST_PATH),
     publicPath: '/',
     filename: "assets/js/[name].js",
     sourceMapFilename: 'assets/js/maps/[name].map',
-    jsonpFunction: 'fr'
+    jsonpFunction: 'fr',
+    library: '[name]_library'
   },
   resolve: {
     modules: [
@@ -46,14 +48,14 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loaders: ['babel-loader','source-map-loader']
       },
       {
         test: /\.scss$/,
         exclude: /(node_modules|\.component\.scss)/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          loader: ['css-loader','postcss-loader','sass-loader']
+          loader: ['source-map-loader','css-loader?sourceMap','postcss-loader?sourceMap','sass-loader?sourceMap']
         })
       },
       {
@@ -78,9 +80,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['public'], {
-      exclude: []
-    }),
     new ExtractTextPlugin({
       filename: 'assets/css/style.css',
       allChunks: true
@@ -94,8 +93,13 @@ module.exports = {
       title: "webpack",
       suppressSuccess: true
     }),
+    new webpack.DllReferencePlugin({
+      context: __dirname,
+      manifest: require('./vendor-manifest.json')
+    }),
     new webpack.LoaderOptionsPlugin({
       options: {
+        context: __dirname,
         eslint: {
           failOnError: true
         },
@@ -104,7 +108,8 @@ module.exports = {
         },
         sassLoader: {
           includePaths: [
-            'node_modules'
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'src/sass'),
           ]
         },
         postcss: {
@@ -128,8 +133,17 @@ module.exports = {
       banner: 'console.warn("This script is development version.");',
       raw: true,
       entryOnly: true,
-      exclude: [/^(?!.*(js|ts)x?$).+$/]
-    })
+      exclude: [/^(?!.*vendor\.(js|ts)x?$).+$/]
+    }),
+    // new webpack.optimize.AggressiveMergingPlugin(),
+    // new webpack.optimize.OccurrenceOrderPlugin(),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   },
+    //   comments: false,
+    //   sourceMap: true
+    // })
   ],
   watchOptions: {
     ignored: /node_modules/
