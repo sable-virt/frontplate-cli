@@ -1,3 +1,22 @@
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/frontainer/frontplate-cli/compare/v4.1.0...v4.2.0) (2017-01-10)
+
+
+### fix
+
+* AutoPrefixerの対象ブラウザを`> 3% in JP`に ([620f262e625f1f8fc7e0f7beff8d6c11ce9916e5](https://github.com/frontainer/frontplate-cli/commit/620f262e625f1f8fc7e0f7beff8d6c11ce9916e5))
+* e.formattedがないエラーがでることがある ([f91a243875303e5e05ce92d8ad5a29f83a2f9ea8](https://github.com/frontainer/frontplate-cli/commit/f91a243875303e5e05ce92d8ad5a29f83a2f9ea8))
+
+### new
+
+* jsビルドの結果を通知するように ([4f14a8cf41c781876134d4daf4ca32d65ccf2775](https://github.com/frontainer/frontplate-cli/commit/4f14a8cf41c781876134d4daf4ca32d65ccf2775))
+
+### test
+
+* CIでのテスト対象にversion7追加 ([29deecf8668f0f9083e951a319ed9b8d2d0b29df](https://github.com/frontainer/frontplate-cli/commit/29deecf8668f0f9083e951a319ed9b8d2d0b29df))
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/frontainer/frontplate-cli/compare/v4.0.0...v4.1.0) (2016-12-27)
 
