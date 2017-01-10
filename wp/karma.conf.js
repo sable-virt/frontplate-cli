@@ -1,9 +1,23 @@
+'use strict';
 // Karma configuration
 // Generated on Tue Jan 10 2017 16:08:44 GMT+0900 (JST)
 
 const webpackConfig = Object.assign({},require('./webpack.config'));
 delete webpackConfig.entry;
 delete webpackConfig.output;
+const UNUSED_PLUGINS = [
+  'HtmlWebpackPlugin',
+  'DllReferencePlugin',
+  'WebpackBuildNotifierPlugin',
+  'BannerPlugin'
+];
+let len = webpackConfig.plugins.length;
+while(len--) {
+  let p =  webpackConfig.plugins[len];
+  if (UNUSED_PLUGINS.indexOf(p.constructor.name) !== -1) {
+    webpackConfig.plugins.splice(len,1);
+  }
+}
 module.exports = function(config) {
   config.set({
 
