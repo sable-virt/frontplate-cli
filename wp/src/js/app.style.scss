@@ -1,0 +1,6 @@
+body {
+  font-size: 50px;
+  &::after {
+    content: 'hofdsafhofsdafa';
+  }
+}
