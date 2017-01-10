@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/frontainer/frontplate-cli#readme",
   "dependencies": {
-    "autoprefixer": "6.6.0",
+    "autoprefixer": "6.6.1",
     "babel-cli": "6.18.0",
     "babel-loader": "6.2.10",
     "babel-preset-es2015": "6.18.0",
@@ -70,7 +70,7 @@
     "sass-lint": "1.10.2",
     "spritesmith": "3.1.0",
     "update-notifier": "1.0.3",
-    "webpack": "^2.1.0-beta.28",
+    "webpack": "2.2.0-rc.3",
     "webpack-build-notifier": "0.1.13",
     "webpack-entries": "1.0.0",
     "webpack-merge": "2.0.0",
