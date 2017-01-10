@@ -16,8 +16,7 @@ const DEST_PATH = 'public';
 module.exports = {
   devtool: '#source-map',
   entry: [
-    './src/js/main',
-    './src/sass/style.scss'
+    './src/main'
   ],
   output: {
     path: path.resolve(DEST_PATH),
@@ -27,39 +26,54 @@ module.exports = {
     jsonpFunction: 'fr'
   },
   resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
     modules: [
       'src',
       "node_modules"
     ],
   },
   devServer: {
-    contentBase: DEST_PATH,  // New
+    contentBase: DEST_PATH,
+    historyApiFallback: true
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        loader: 'tslint-loader',
         enforce: 'pre'
       },
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
+        test: /\.tsx?$/,
+        loaders: [
+          'awesome-typescript-loader',
+          'angular2-template-loader',
+          'angular2-router-loader'
+        ]
       },
       {
         test: /\.scss$/,
-        exclude: /(node_modules|\.component\.scss)/,
+        exclude: /(node_modules|component\.scss)/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
           loader: ['css-loader','postcss-loader','sass-loader']
         })
       },
       {
+        test: /\.component\.scss$/,
+        exclude: /node_modules/,
+        loader: 'raw-loader'
+      },
+      {
         test: /\.html$/,
         exclude: /node_modules/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.component\.html$/,
+        exclude: /(node_modules|component\.html)/,
+        loader: 'raw-loader'
       },
       {
         test: /\.json$/,
@@ -78,6 +92,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      __dirname
+    ),
     new CleanWebpackPlugin(['public'], {
       exclude: []
     }),
