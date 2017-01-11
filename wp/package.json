@@ -13,8 +13,8 @@
     "dll": "webpack --config webpack.dll.config.js",
     "map": "webpack && source-map-explorer public/assets/js/main.js public/assets/maps/assets/js/main.js.map"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "frontainer",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "6.6.1",
