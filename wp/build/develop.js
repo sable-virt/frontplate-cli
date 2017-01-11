@@ -11,10 +11,10 @@ module.exports = {
       title: "webpack",
       suppressSuccess: true
     }),
-    // new webpack.DllReferencePlugin({
-    //   context: process.cwd(),
-    //   manifest: path.join(process.cwd(),'vendor-manifest.json')
-    // }),
+    new webpack.DllReferencePlugin({
+      context: process.cwd(),
+      manifest: path.join(process.cwd(),'vendor-manifest.json')
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
