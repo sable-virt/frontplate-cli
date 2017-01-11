@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dll && webpack",
+    "start": "npm run serve",
+    "build": "npm run dll && webpack",
     "serve": "npm run dll && webpack-dev-server",
     "serve:prod": "npm run aot && NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack-dev-server -p",
+    "production": "npm run aot && NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack -p",
     "test": "karma start",
     "dll": "webpack --config webpack.dll.config.js",
     "map": "source-map-explorer public/assets/js/main.js public/assets/js/main.js.map",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor -p protractor.conf.js",
-    "aot": "ngc -p tsconfig.json",
-    "production": "npm run aot && NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack -p"
+    "aot": "ngc -p tsconfig.json"
   },
   "author": "frontainer",
   "license": "MIT",

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dll && webpack",
+    "start": "npm run serve",
+    "build": "npm run dll && webpack",
     "serve": "npm run dll && webpack-dev-server",
+    "serve:prod": "NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack-dev-server -p",
     "production": "NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack -p",
     "test": "karma start",
     "dll": "webpack --config webpack.dll.config.js",
