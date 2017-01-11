@@ -24,6 +24,6 @@
 </head>
 <body>
 <my-app>Loading...</my-app>
-<script src="assets/js/app.js" async></script>
+<% if (!this.isProduction) {%><script src="assets/js/vendor.js"></script><% } %>
 </body>
 </html>

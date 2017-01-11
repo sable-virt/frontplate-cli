@@ -2,7 +2,8 @@
 // Karma configuration
 // Generated on Tue Jan 10 2017 16:08:44 GMT+0900 (JST)
 
-const webpackConfig = Object.assign({},require('./webpack.config'));
+const merge = require('webpack-merge');
+const webpackConfig = merge({},require('./webpack.config'));
 delete webpackConfig.entry;
 delete webpackConfig.output;
 const UNUSED_PLUGINS = [
@@ -30,7 +31,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      `src/js/**/*spec.js`
+      `./src/**/*.spec.js`
     ],
 
     // list of files to exclude
@@ -41,7 +42,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '**/*.spec.js': ['webpack']
+      '**/*spec.js': ['webpack']
     },
 
     webpack: webpackConfig,

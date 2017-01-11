@@ -1,7 +1,6 @@
 /**
  * @constructor
  */
-import './vendor';
 export class App {
   constructor(val) {
     this.val = val;

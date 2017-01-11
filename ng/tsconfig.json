@@ -19,12 +19,11 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "compileOnSave": true,
   "exclude": [
-    "node_modules",
-    "public",
-    "config",
-    "e2e",
     "src/test.ts",
     "src/**/*spec.ts",
     "src/aot-compiled"
@@ -37,6 +36,7 @@
   },
   "angularCompilerOptions": {
     "genDir": "src/aot-compiled",
-    "skipMetadataEmit" : true
+    "skipMetadataEmit" : true,
+    "debug": true
   }
 }

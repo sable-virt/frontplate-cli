@@ -6,9 +6,10 @@
   "scripts": {
     "start": "npm run dll && webpack",
     "serve": "npm run dll && webpack-dev-server",
+    "production": "NODE_ENV='production' webpack -p --config webpack.dll.config.js && NODE_ENV='production' webpack -p",
     "test": "karma start",
     "dll": "webpack --config webpack.dll.config.js",
-    "map": "webpack && source-map-explorer public/assets/js/main.js"
+    "map": "webpack && source-map-explorer public/assets/js/main.js public/assets/maps/assets/js/main.js.map"
   },
   "author": "",
   "license": "ISC",
@@ -42,13 +43,13 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^4.1.1",
     "source-map-explorer": "^1.3.3",
-    "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
     "to-string-loader": "^1.1.5",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0-rc.3",
     "webpack-build-notifier": "^0.1.13",
     "webpack-dev-server": "^2.2.0-rc.0",
+    "webpack-loader-options-merge": "0.0.1",
     "webpack-merge": "^2.3.1"
   }
 }
