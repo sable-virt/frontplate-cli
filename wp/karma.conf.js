@@ -4,8 +4,7 @@
 
 const merge = require('webpack-merge');
 const webpackConfig = merge({},require('./webpack.config'));
-delete webpackConfig.entry;
-delete webpackConfig.output;
+// delete webpackConfig.output;
 const UNUSED_PLUGINS = [
   'HtmlWebpackPlugin',
   'DllReferencePlugin',
