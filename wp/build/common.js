@@ -1,6 +1,5 @@
 'use strict';
 const path = require('path');
-
 module.exports = {
   devtool: '#source-map',
   output: {
@@ -17,6 +16,7 @@ module.exports = {
       "node_modules"
     ],
   },
+  stats: 'minimal',
   watchOptions: {
     ignored: /node_modules/
   },

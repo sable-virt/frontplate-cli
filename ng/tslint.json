@@ -1,4 +1,7 @@
 {
+    "rulesDirectory": [
+        "node_modules/codelyzer"
+    ],
     "jsRules": {
         "class-name": true,
         "comment-format": [

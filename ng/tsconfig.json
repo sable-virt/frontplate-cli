@@ -19,7 +19,7 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "compileOnSave": true,
+  "compileOnSave": false,
   "files": [
     "src/vendor.ts",
     "src/main.ts"
@@ -34,7 +34,9 @@
     "node_modules/@types"
   ],
   "awesomeTypescriptLoaderOptions": {
-    "useWebpackText": true
+    "useWebpackText": true,
+    "useCache": true,
+    "useBabel": true
   },
   "angularCompilerOptions": {
     "genDir": "src/aot-compiled",

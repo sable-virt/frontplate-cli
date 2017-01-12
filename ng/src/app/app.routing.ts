@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 
 const routes: Routes = [
-    { path: 'detail', loadChildren: '../detail/detail.module#DetailModule' }
+    {path: 'detail', loadChildren: '../detail/detail.module#DetailModule'}
 ];
 
 @NgModule({
@@ -12,4 +12,5 @@ const routes: Routes = [
     exports: [RouterModule],
     declarations: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}

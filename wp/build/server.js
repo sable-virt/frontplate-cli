@@ -8,6 +8,7 @@ module.exports = {
     contentBase: 'public',
     hot: (process.env.NODE_ENV !== 'production'),
     open: true,
-    historyApiFallback: false // SPA作るときはtrueに
+    historyApiFallback: false, // SPA作るときはtrueに
+    stats: 'minimal'
   }
 };
