@@ -2,7 +2,6 @@
 // Generated on Tue Jan 10 2017 16:08:44 GMT+0900 (JST)
 
 const webpackConfig = Object.assign({},require('./webpack.config'));
-delete webpackConfig.entry;
 delete webpackConfig.output;
 module.exports = function(config) {
   config.set({
