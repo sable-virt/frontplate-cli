@@ -23,7 +23,7 @@ module.exports = {
         })
       },
       {
-        test: /\.(ttf|woff|svg|gif|jpg|png)$/,
+        test: /\.(ttf|woff2?|eot|svg|gif|jpg|png)$/,
         loader: 'file-loader?name=[path][name].[ext]&context=./src'
       }
     ]
@@ -36,7 +36,7 @@ module.exports = {
           sourceMap: true,
           includePaths: [
             path.resolve(process.cwd(), 'node_modules'),
-            path.resolve(process.cwd(), './src/sass'),
+            path.resolve(process.cwd(), './src/assets/css'),
           ]
         },
         postcss: {

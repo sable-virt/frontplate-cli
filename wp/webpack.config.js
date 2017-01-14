@@ -19,12 +19,13 @@ module.exports = loaderOptionsMerge(
     },
     require('./build/common'),
     process.env.NODE_ENV === 'production' ? require('./build/production') : require('./build/develop'),
-    require('./build/server'),
 
     require('./build/html'),
     require('./build/babel'),
     require('./build/sass'),
     require('./build/json'),
-    require('./build/copy')
+    require('./build/copy'),
+    require('./build/sprite'),
+    require('./build/server')
   )
 );

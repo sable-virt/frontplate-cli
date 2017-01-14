@@ -27,14 +27,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        tslint: {
-          emitErrors: true,
-          failOnHint: true
-        }
-      }
-    }),
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
       process.cwd()

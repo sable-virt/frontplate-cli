@@ -12,9 +12,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx' , '.sass', '.scss', '.ejs', '.html'],
     modules: [
-      'src',
-      "node_modules"
-    ],
+      path.join(process.cwd(),'src'),
+      path.join(process.cwd(),'node_modules')
+    ]
   },
   stats: 'minimal',
   watchOptions: {

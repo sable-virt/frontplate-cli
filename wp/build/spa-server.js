@@ -4,7 +4,7 @@
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-module.exports = merge({},require('./server'), {
+module.exports = merge(require('./server'), {
   devServer: {
     historyApiFallback: true // SPA作るときはtrueに
   }
