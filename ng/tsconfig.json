@@ -21,14 +21,10 @@
   },
   "compileOnSave": false,
   "files": [
-    "src/vendor.ts",
     "src/main.ts"
   ],
   "include": [
     "src/**/*.module.ts"
-  ],
-  "exclude": [
-    "node_modules"
   ],
   "typeRoots": [
     "node_modules/@types"
@@ -41,6 +37,6 @@
   "angularCompilerOptions": {
     "genDir": "src/aot-compiled",
     "skipMetadataEmit" : true,
-    "debug": true
+    "debug": false
   }
 }

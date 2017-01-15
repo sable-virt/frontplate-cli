@@ -25,10 +25,12 @@ module.exports = loaderOptionsMerge(
     require('./build/spa-server'),
 
     require('./build/html'),
+    require('./build/babel'),
     require('./build/typescript'),
     require('./build/sass'),
     require('./build/angular'),
     require('./build/json'),
-    require('./build/copy')
+    require('./build/copy'),
+    require('./build/sprite')
   )
 );
