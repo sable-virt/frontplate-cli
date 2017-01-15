@@ -6,7 +6,6 @@ const loaderOptionsMerge = require('webpack-loader-options-merge');
  * url: https://webpack.github.io/docs/configuration.html
  */
 
-console.log(process.env.NODE_ENV);
 module.exports = loaderOptionsMerge(
   merge(
     {
