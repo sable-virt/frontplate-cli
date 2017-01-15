@@ -23,9 +23,6 @@ module.exports = {
       options: {
         eslint: {
           failOnError: true
-        },
-        babel: {
-          presets: ['es2015']
         }
       }
     })

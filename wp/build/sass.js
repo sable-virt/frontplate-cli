@@ -16,7 +16,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
           loader: [
-            'css-loader?sourceMap', // CSS Moduleの場合 &modules をつける
+            'css-loader?sourceMap&importLoaders=1&localIdentName=[name]-[local]-[hash:base64:5]', // CSS Moduleの場合 &modules をつける
             'postcss-loader',
             'sass-loader'
           ]
@@ -50,7 +50,7 @@ module.exports = {
       }
     }),
     new ExtractTextPlugin({
-      filename: 'assets/css/style.css',
+      filename: 'assets/css/[name].css',
       allChunks: true,
       disable: process.env.NODE_ENV !== 'production'
     })
