@@ -1,3 +1,14 @@
+<a name="4.2.2"></a>
+## [4.2.2](https://github.com/frontainer/frontplate-cli/compare/v4.2.1...v4.2.2) (2017-09-07)
+
+
+### fix
+
+* cleanタスクで削除オプションを設定できるように ([c9b6c2733c298c237606e0825a476f3553b68d28](https://github.com/frontainer/frontplate-cli/commit/c9b6c2733c298c237606e0825a476f3553b68d28))
+* node-sassのメモリリークによりビルドに失敗する #23 ([fc08e568cd97c43fd99612dc81fd289069a9a655](https://github.com/frontainer/frontplate-cli/commit/fc08e568cd97c43fd99612dc81fd289069a9a655))
+
+
+
 <a name="4.2.1"></a>
 ## [4.2.1](https://github.com/frontainer/frontplate-cli/compare/v4.2.0...v4.2.1) (2017-03-21)
 
